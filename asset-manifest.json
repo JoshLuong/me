@@ -1,8 +1,12 @@
 {
-  "main.css": "static/css/main.27d33466.css",
-  "main.css.map": "static/css/main.27d33466.css.map",
-  "main.js": "static/js/main.80352ebf.js",
-  "main.js.map": "static/js/main.80352ebf.js.map",
+  "main.css": "static/css/main.f293cc64.css",
+  "main.css.map": "static/css/main.f293cc64.css.map",
+  "main.js": "static/js/main.7f98e8a3.js",
+  "main.js.map": "static/js/main.7f98e8a3.js.map",
   "static\\media\\thumbnail_image.png": "static/media/thumbnail_image.568b76ed.png",
+  "static\\media\\thumbnail_image1.png": "static/media/thumbnail_image1.f45d9284.png",
+  "static\\media\\thumbnail_image2.png": "static/media/thumbnail_image2.522dd682.png",
+  "static\\media\\thumbnail_image3.png": "static/media/thumbnail_image3.c129112c.png",
+  "static\\media\\thumbnail_image4.png": "static/media/thumbnail_image4.705b7ada.png",
   "static\\media\\tropical-bckgd.jpg": "static/media/tropical-bckgd.04ff6cde.jpg"
 }
