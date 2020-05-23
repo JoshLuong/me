@@ -1,17 +1,16 @@
-# [YouTube Tutorial](https://www.youtube.com/playlist?list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm)
-I created a Youtube code along tutorial for this project. Click the link above to view!
-
-# react-portfolio-starter
-A React based personal portfolio app using create-react-app and React Router v4.
 
 # Tools
 * create-react-app cli
 * React MDL material design
 * React Router v4
+* Slideshow
+* React Reveal
+* https://kaboompics.com/photo/8482/tropical-botanical-garden-in-belem-lisbon-portugal
 
 # Start App
-Clone repo, install, cd into folder and run:
-```git
 npm install
 npm start
+
+if make changes, save local, then run npm run deploy
+inspiration from Paul Hanna
 ```

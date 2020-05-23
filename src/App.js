@@ -3,26 +3,50 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import Blink from 'react-blink-text';
+
 
 class App extends Component {
   render() {
+    function style () {
+      return {
+        display:'none'
+      }
+    }
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white', fontSize:'2em'}} to="/">Josh Luong</Link>} scroll>
+        <Header
+         className="header-color"
+         title={
+           <div>
+           <Link style={{  fontFamily: 'Roboto Mono',textDecoration: 'none', color: '#2F2B0E', fontSize:'2em', float:'left'}} to="/">
+
+           josh luong
+
+           </Link>
+           <div style ={{display:'inline-block'}}>
+           <Blink fontFamily= 'Roboto Mono' textDecoration= 'none' color= '#2F2B0E' fontSize='2em' text=' |'></Blink>
+           </div>
+           </div>
+
+         }
+
+
+        scroll>
             <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/contact">Contact</Link>
+                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to="/">Home</Link>
+                <Link style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to="/resume">Resume</Link>
+                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to="/aboutme">About</Link>
+                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Josh Luong</Link>}>
-            <Navigation>
-              <Link to="/">Home</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/contact">Contact</Link>
+        <Drawer style = {{fontFamily: 'Roboto Mono',color: '#2F2B0E'}} title={<Link onClick={() => this.style()} style={{  fontFamily: 'Roboto Mono', textDecoration: 'none', color: 'black'}} to="/">josh</Link>}>
+            <Navigation style={{  fontFamily: 'Roboto Mono'}}>
+              <Link to="/" onClick={() => this.style()}>Home</Link>
+              <Link to="/resume"  onClick={() => this.style()}>Resume</Link>
+              <Link to="/aboutme"  onClick={() => this.style()}>About</Link>
+              <Link to="/contact"  onClick={() => this.style()}>Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
