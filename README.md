@@ -13,4 +13,6 @@ npm start
 
 if make changes, save local, then run npm run deploy
 inspiration from Paul Hanna
+
+change www... to githubs page
 ```
