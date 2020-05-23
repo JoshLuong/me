@@ -2,7 +2,6 @@
   "name": "myportfoliosite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "www.joshluong.com",
   "dependencies": {
     "react": "^16.2.0",
     "react-blink-text": "^1.0.3",
