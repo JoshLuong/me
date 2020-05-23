@@ -35,7 +35,7 @@ class App extends Component {
 
         scroll>
             <Navigation>
-                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/resume"}>Home</Link>
+                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/"}>Home</Link>
                 <Link style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/resume"}>Resume</Link>
                 <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/aboutme"}>About</Link>
                 <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/contact"}>Contact</Link>
