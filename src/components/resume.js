@@ -27,7 +27,7 @@ class Resume extends Component {
 
               <div style={{fontFamily: 'Roboto Mono'}}class="floating-div">
               <HeadShake>
-              <h2 style={{  fontFamily: 'Roboto Mono',paddingTop: '0.5em'}}>Joshua Luong</h2>
+              <h2 style={{fontFamily: 'Roboto Mono',paddingTop: '0.5em'}}>Joshua Luong</h2>
               </HeadShake>
               <h4 style={{fontFamily: 'Roboto Mono'}}>Combined Major in Computer Science and
               Microbiology & Immunology</h4>
