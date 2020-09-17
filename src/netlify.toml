@@ -1,5 +1,6 @@
 [build]
   command = "npm run build"
+  CI= "npm run build""
   publish="www.joshluong.com"
   base = "www.joshluong.com"
   [[redirects]]
