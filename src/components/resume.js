@@ -87,13 +87,13 @@ class Resume extends Component {
                 />
               <hr style={{borderTop: '3px solid #2F2B0E'}} />
               <h2>Projects</h2>
-                <Experience
-                    startEndYear={"June 2020"}
-                    jobName="Store 2 Door: Full Stack Delivery System"
-                        jobDescription={<div><p>Designed an application that tackles the difficulties associated with <strong style={{ color: '#968E50' }}>immunocompromised individuals </strong> during the <strong style={{ color: '#968E50' }}>COVID-19 pandemic </strong></p>
-                            <p>This application boasts usability for individuals whom are unable to expose themselves to shop for essential items (e.g. groceries) by deploying a "buddy system" of receivers to providers.
-                                Tne system pairs immunocompromised individuals with healthy people who are able bodied based on location. This application </p>
-                        <p>Implemented a GUI using JavaFX </p> </div>}
+              <Experience
+                startEndYear={"June 2020"}
+                jobName="Store-2-Door: Group Academic Programming Project"
+                jobDescription={ <div><p>Developed a <strong style={{color:'#968E50'}}>full stack application</strong> aimed towards immunocompromised individuals during the <strong style={{color:'#968E50'}}>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p>
+                  <p>Contributed to seamless, modern UI using <strong style={{color:'#968E50'}}>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong style={{color:'#968E50'}}>Node.js</strong> matches two users together to fulfil the delivery service </p>
+                  <p>Created efficient <strong style={{color:'#968E50'}}>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p>
+                  <p>Achieved an <strong style={{color:'#968E50'}}>A+</strong> grade for this final project</p> </div>}
                 />
               <Experience
                 startEndYear={"Feb 2020 | May 2019 "}
@@ -111,6 +111,7 @@ class Resume extends Component {
                     <p>Constructed a database in <strong style={{color:'#968E50'}}>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p>
                     <p>Implemented a GUI using JavaFX </p> </div>}
                   />
+
 
 
           </Cell>
