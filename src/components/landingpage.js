@@ -78,7 +78,7 @@ class Landing extends Component {
 
             <Bounce right duration={700} delay={300}>
               <p>HTML/ CSS | JavaScript | React | NodeJS | Express</p>
-              <p id="bottom_p">Java | C++ | Python | MySQL | PostgreSQL</p>
+              <p id="bottom_p">Java | C++ | MySQL | PostgreSQL</p>
             </Bounce>
 
 
@@ -86,7 +86,7 @@ class Landing extends Component {
             <div className="banner-text" >
             <Bounce right duration={700} delay={300}>
               <br/>
-              <p style= {{fontSize:'1.5em', marginTop:'2em', marginBottom:'2em', padding:'10'}}>Currently Seeking <strong style={{color:'#968E50'}}>2020</strong> Internships !</p>
+              <p style= {{fontSize:'1.5em', marginTop:'2em', marginBottom:'2em', padding:'10'}}>Currently Seeking <strong style={{color:'#968E50'}}>2021</strong> Internships !</p>
               <br/>
             </Bounce>
             </div>

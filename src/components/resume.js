@@ -50,7 +50,7 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid #CCC8AB', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
             <h2>Skills</h2>
             <h5>Languages And Technologies</h5>
-            <p>Java, C++, JavaScript, React, Python, NodeJS*, Express*, HTML/ CSS</p>
+            <p>Java, C++, JavaScript, React, NodeJS*, Express*, HTML/ CSS</p>
             <h5>Tools</h5>
             <p>Git, Perforce, Jira</p>
             <h5>Databases</h5>
@@ -87,8 +87,16 @@ class Resume extends Component {
                 />
               <hr style={{borderTop: '3px solid #2F2B0E'}} />
               <h2>Projects</h2>
+                <Experience
+                    startEndYear={"June 2020"}
+                    jobName="Store 2 Door: Full Stack Delivery System"
+                        jobDescription={<div><p>Designed an application that tackles the difficulties associated with <strong style={{ color: '#968E50' }}>immunocompromised individuals </strong> during the <strong style={{ color: '#968E50' }}>COVID-19 pandemic </strong></p>
+                            <p>This application boasts usability for individuals whom are unable to expose themselves to shop for essential items (e.g. groceries) by deploying a "buddy system" of receivers to providers.
+                                Tne system pairs immunocompromised individuals with healthy people who are able bodied based on location. This application </p>
+                        <p>Implemented a GUI using JavaFX </p> </div>}
+                />
               <Experience
-                startEndYear={"May 2019 | Feb 2020"}
+                startEndYear={"Feb 2020 | May 2019 "}
                 jobName="Multilevel Snake Game: React Programming Project"
                 jobDescription={ <div><p>Developed a single player snake game using vanilla <strong style={{color:'#968E50'}}>JavaScript, HTML, and CSS </strong>while learning the language</p>
                   <p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p>
