@@ -28,29 +28,25 @@ class Contact extends Component {
 
             <div style = {{fontSize: '20px', color: 'white', fontFamily: 'Anton'}}className="contact-list">
               <List className="center-style">
-              <Jump count={3} duration={2000}  >
               <ListItem className="center-style">
                 <ListItemContent className="list-content center-style">
                   <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{fontSize: '20px', textDecoration: 'none', color: 'white'}}>linkedin.com/in/joshua-luong</a></p>
                 </ListItemContent>
               </ListItem>
-              </Jump>
                 <ListItem className="center-style">
-                <Swing count={3}duration={2000} >
+                <Swing count={1}duration={2000} >
                   <ListItemContent className="list-content center-style" style={{width:"100%"}}>
                     <i  className="fa fa-phone-square" aria-hidden="true"/>
                     <p><a href="tel:7782883221" style={{fontSize: '20px',  textDecoration: 'none', color: 'white'}}>(778) 288- 3221</a></p>
                   </ListItemContent>
                   </Swing>
                 </ListItem>
-                <Jump count={3} duration={2000}  >
                 <ListItem className="center-style">
                   <ListItemContent className="list-content center-style">
                     <i className="fa fa-envelope center-style" aria-hidden="true"/>
                     <p><a href="mailto:joshualuong@hotmail.com" style={{fontSize: '20px', textDecoration: 'none', color: 'white'}}>joshualuong@hotmail.com</a></p>
                   </ListItemContent>
                 </ListItem>
-                </Jump>
 
 
               </List>
