@@ -50,7 +50,7 @@ class Resume extends Component {
                 <p>Git, Perforce, Jira</p>
                 <h5>Databases</h5>
                 <p>MySQL, PostgreSQL, JDBC, ODBC</p>
-                <p>*Currently learning</p>
+                                <p style={{paddingBottom: '0.75em'}}>*Currently learning</p>
                   </div>
                             </div></Bounce>
           </Cell>

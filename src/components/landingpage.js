@@ -72,12 +72,12 @@ class Landing extends Component {
             <div className="banner-text" >
               <Bounce left duration={1000}>
                 <h1 id ="landing-title">Software Developer</h1>
-                <h5 style= {{ fontFamily: 'Roboto', color:'white', size:'2em', marginTop: '0'}}>Frontend | Backend</h5>
+                <h5 style= {{ fontFamily: 'Roboto', color:'white', size:'2em', marginTop: '0'}}>Front-end | Back-end</h5>
               </Bounce>
 
 
             <Bounce right duration={700} delay={300}>
-              <p>HTML/ CSS | JavaScript | React | NodeJS | Express</p>
+              <p>HTML5/ CSS3 | JavaScript | React | NodeJS | Express</p>
               <p id="bottom_p">Java | C++ | MySQL | PostgreSQL</p>
             </Bounce>
 
