@@ -21,7 +21,8 @@ class Contact extends Component {
             <div style = {{fontSize: '20px', color: 'black', fontFamily: 'Roboto',}}className="contact-list">
               <List className="center-style">
               <ListItem className="center-style">
-                <ListItemContent className="list-content center-style">
+                                    <ListItemContent className="list-content center-style">
+                                        <i className="fab fa-linkedin" aria-hidden="true" style={{ color: 'black' }} />
                   <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{fontSize: '20px', textDecoration: 'none', color: 'black'}}>linkedin.com/in/joshua-luong</a></p>
                 </ListItemContent>
               </ListItem>

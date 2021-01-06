@@ -9,8 +9,9 @@ class About extends Component {
         <Grid className="landing-grid mdl-grid--no-spacing">
           <Cell col={12}>
 
-            <div className="banner-text" id="about-me-text">
+                    <div className="banner-text" id="about-me-text">
                         <h2 style={{ color: 'black' }}>About Me</h2>
+                        <div style={{ textAlign: 'left' }}>
                         <p style={{ color: 'black' }}>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
               I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)
               is baking/ cooking. I love exloring new recipies and cuisines. Talk to me about the great outdoors!</p>
@@ -18,10 +19,15 @@ class About extends Component {
               and front-end, developing high quality, scalable features from start to finish. Through my work terms,
               I have gained valuable experience on how to efficiently find solutions to tough problems.
               Through my work, I have gained insights on how to thrive in team environments, what my learning styles are, and how to stay motivated in this line of work.</p>
-
+                        <p style={{ color: 'black' }}>My passion for learning runs deep and is also exemplified by my own major: being in a combined major of
+                            microbiology & immunology and computer science, I am extremely fortunate that I get to learn two STEM fields at once. The knowledge I gain regarding aspects
+                            of the newest technologies, creative solutions, the human immune system, virology, vaccines, and more, drives me to continunously learn and remain ambitious-
+                            For those who are curious, some of my works in computer science are detailed in my resume, and <a target="_blank"  style={{ color: ' #444E74'}}href= "https://www.dropbox.com/s/xddcbrcjhmd6si7/COVID-19%20drug%20proposal.pdf?dl=0">
+                                    here</a> is an article I wrote to propose COVID-19 antivirals. </p>
                         <p style={{ color: 'black' }} id="bottom_p">Working in team settings, I have fostered my ability to promote success through collaboration,
-              while also producing creative solutions that commit to quality. This was especially evident while communicating with both senior developers and customers,
+                            while also producing creative solutions that commit to quality. This was especially evident while communicating with both senior developers and customers,
               all while proudly producing quality code and customer satisfaction.</p>
+                            </div>
 
 
             </div>
