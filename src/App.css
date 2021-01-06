@@ -23,10 +23,10 @@
     }
 .header-color {
     background: #8CA2DD; /* fallback for old browsers */
-    opacity: 0.85;
+    opacity: 0.8;
     font-family: 'Roboto';
-    background: -webkit-linear-gradient(to right, #8CA2DD #EEEDE7); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8CA2DD, #EEEDE7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #8CA2DD #8CA2DD); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA2DD, #8CA2DD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .resume-personal-info{
   text-align: center;

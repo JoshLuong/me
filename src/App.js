@@ -16,17 +16,17 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header
+                <Header 
          className="header-color"
          title={
            <div>
-           <Link style={{  fontFamily: 'Roboto',textDecoration: 'none', color: '#2F2B0E', fontSize:'2em', float:'left'}} to="/">
+           <Link style={{  fontFamily: 'Roboto',textDecoration: 'none', color: 'black', fontSize:'2.5em', float:'left'}} to="/">
 
            josh luong
 
            </Link>
            <div style ={{display:'inline-block'}}>
-           <Blink fontFamily= 'Roboto' textDecoration= 'none' color= '#2F2B0E' fontSize='2em' text=' |'></Blink>
+                     <Blink fontFamily='Roboto' textDecoration='none' color= 'black' fontSize='2.3em' text=' |'></Blink>
            </div>
            </div>
 
@@ -35,13 +35,13 @@ class App extends Component {
 
         scroll>
                  <Navigation style={{ fontFamily: 'Roboto' }}>
-                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/"}>Home</Link>
-                <Link style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/resume"}>Resume</Link>
-                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/aboutme"}>About</Link>
-                <Link  style = {{color: '#2F2B0E' , fontSize:'1.35em'}} to={process.env.PUBLIC_URL + "/contact"}>Contact</Link>
+                        <Link style={{ color: 'black' , fontSize:'1.6em'}} to={process.env.PUBLIC_URL + "/"}>Home</Link>
+                        <Link style={{ color: 'black' , fontSize:'1.6em'}} to={process.env.PUBLIC_URL + "/resume"}>Resume</Link>
+                        <Link style={{ color: 'black' , fontSize:'1.6em'}} to={process.env.PUBLIC_URL + "/aboutme"}>About</Link>
+                        <Link style={{ color: 'black' , fontSize:'1.6em'}} to={process.env.PUBLIC_URL + "/contact"}>Contact</Link>
             </Navigation>
         </Header>
-        <Drawer style = {{fontFamily: 'Roboto',color: '#2F2B0E'}} title={<Link onClick={() => this.style()} style={{  fontFamily: 'Roboto', textDecoration: 'none', color: 'black'}} to="/">josh</Link>}>
+                <Drawer style={{ fontFamily: 'Roboto', color: '#c1cff5'}} title={<Link onClick={() => this.style()} style={{  fontFamily: 'Roboto', textDecoration: 'none', color: 'black'}} to="/">josh</Link>}>
             <Navigation style={{  fontFamily: 'Roboto'}}>
               <Link to={process.env.PUBLIC_URL + "/"} onClick={() => this.style()}>Home</Link>
               <Link to={process.env.PUBLIC_URL + "/resume"} onClick={() => this.style()}>Resume</Link>
