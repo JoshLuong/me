@@ -1,19 +1,20 @@
 .header-color {
-  background: #C8C4A7;  /* fallback for old browsers */
-  opacity:0.85;
-  font-family: 'Roboto Mono';
-  background: -webkit-linear-gradient(to right, #C8C4A7, #968E50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #C8C4A7, #968E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #8CA2DD; /* fallback for old browsers */
+    opacity: 0.85;
+    font-family: 'Roboto';
+    background: -webkit-linear-gradient(to right, #8CA2DD #EEEDE7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA2DD, #EEEDE7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .resume-personal-info{
   text-align: center;
+
 }
+
 .landing-grid {
-  background-image: url('./img/tropical-bckgd.jpg');
+  background-image: url('./img/blue_bgnd.jpg');
   text-align: center;
   position: fixed;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto';
   top: 0;
   left: 0;
   width: 100%;
@@ -29,16 +30,20 @@
 
 /* Resume Page css */
 .resume-right-col {
-  background: #C8C4A7;
-  color: white;
-  text-align: left;
-  padding: 2em;
+    background: #444E74;
+    color: white;
+    text-align: left;
+    padding: 2em;
 }
 
-#landing-title{
-  font-size: 4em;
-  text-align: center;
-  margin-bottom: 0;
+.resume-right-col p {
+    font-size: 15px;
+}
+#landing-title {
+    font-size: 4em;
+    color: #8CA2DD;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /* contact page css */
@@ -54,13 +59,12 @@
 }
 
 .contact-grid {
-  text-align: center;
-  justify-content: center;
-  background:rgba(43,40,16,0.65);
-  width: 80%;
-  color: black;
-  margin-bottom: 20px;
-  margin-top:5em;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 5em;
 }
 
 .contact-div{
@@ -70,20 +74,22 @@
 
 .contact-grid h2 {
   color:white;
-font-family: 'Roboto Mono';
+font-family: 'Roboto';
+padding-top: 0.75em;
+
 }
 
 .contact-grid p {
-font-family: 'Roboto Mono';
+font-family: 'Roboto';
   color:white;
   font-weight: bold;
 }
 
 .contact-grid hr {
-  color:white;
-  border-top: 5px dotted #C8C4A7;
-  width: 50%;
-  margin: auto;
+    color: white;
+    border-top: 5px dotted white;
+    width: 80%;
+    margin: auto;
 }
 .contact-grid h4 {
   color:white;
@@ -166,9 +172,11 @@ font-family: 'Roboto Mono';
 }
 
 .banner-text p {
-  color: white;
-  font-size: 15px;
-  padding-top: 0em;
+    color: white;
+    font-size: 20px;
+    padding-top: 0em;
+    padding-left: 0.85em;
+    padding-right: 0.85em;
 }
 
 #bottom_p {

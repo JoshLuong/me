@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import avatar from '../img/thumbnail_image.png'
 import Swing from 'react-reveal/Swing'
 import Jump from 'react-reveal/Jump'
 
@@ -11,22 +10,14 @@ class Contact extends Component {
       <div className=" landing-grid">
         <Grid style={{paddingTop:'10em',   justifyContent: 'center'}}>
           <div class="mdl-layout-spacer"></div>
-          <Cell col={6} className="contact-grid">
-            <img
-              src={avatar}
-              alt="avatar"
-              style={{height: '250px', marginTop : '3em'}}
-               />
-             <h4 id="bottom_p"style={{fontFamily: 'Roboto Mono', width: '75%', margin: 'auto', paddingTop: '1em'}}>Want to know more? Contact me on any of these platforms!</h4>
-
-          </Cell>
             <div class="mdl-layout-spacer"></div>
-          <Cell col={6} className="contact-grid">
-          <div >
-            <h2>Contact Me</h2>
+                <Cell col={12} className="contact-grid">
+                    <div style={{ opacity: '0.8', backgroundColor: 'black' }} >
+                       
+                        <div><h2 style={{ paddingTop: '1 em' }}>Contact Me!</h2>  </div>     
             <hr/>
 
-            <div style = {{fontSize: '20px', color: 'white', fontFamily: 'Anton'}}className="contact-list">
+            <div style = {{fontSize: '20px', color: 'white', fontFamily: 'Roboto',}}className="contact-list">
               <List className="center-style">
               <ListItem className="center-style">
                 <ListItemContent className="list-content center-style">

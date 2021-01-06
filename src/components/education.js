@@ -11,7 +11,7 @@ class Education extends Component {
         <Cell col={8}>
           <h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4>
           <p>{this.props.schoolDescription}</p>
-          <p> <strong style={{color:'#968E50'}}>•	Current Cumulative GPA: 3.90</strong></p>
+                <p> <strong style={{ color:'#8CA2DD'}}>•	Current Cumulative GPA: 4.00 | 86%</strong></p>
         </Cell>
       </Grid>
     )

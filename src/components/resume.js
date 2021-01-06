@@ -4,117 +4,118 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 import avatar from '../img/thumbnail_image.png'
-import HeadShake from 'react-reveal/HeadShake'
-import Swing from 'react-reveal/Swing'
-import Jump from 'react-reveal/Jump'
+import Bounce from 'react-reveal/Bounce'
 
 
 class Resume extends Component {
   render() {
     return(
-      <div className= 'landing-grid'style={{  fontFamily: 'Roboto Mono'}}>
-        <Grid style ={{paddingTop: '10em'}}>
+      <div className= 'landing-grid'style={{  fontFamily: 'Roboto'}}>
+            <Grid style={{ paddingTop: '10em' }}>
+
           <div class="mdl-layout-spacer"></div>
-          <Cell col={4} style= {{ background:'rgba(47,43,14,0.65)'}}>
-          <div className="resume-personal-info" style= {{color:'#E3DFBF'}} >
-              <div style={{textAlign: 'center'}}>
-                <img class="avatar-resume-img"
-                  src={avatar}
-                  alt="avatar"
-                  style={{height: '200px'}}
-                   />
-              </div>
+                <Cell col={4}>
+                    <Bounce left duration={700} delay={300}>
+                        <div className="resume-personal-info" style={{ color: '#f0f2f7', background: 'rgba(112,129,176,0.65)' }} >
+                  <div style={{textAlign: 'center'}}>
+                    <img class="avatar-resume-img"
+                      src={avatar}
+                      alt="avatar"
+                      style={{height: '200px'}}
+                       />
+                  </div>
 
-              <div style={{fontFamily: 'Roboto Mono'}}class="floating-div">
-              <HeadShake>
-              <h2 style={{fontFamily: 'Roboto Mono',paddingTop: '0.5em'}}>Joshua Luong</h2>
-              </HeadShake>
-              <h4 style={{fontFamily: 'Roboto Mono'}}>Combined Major in Computer Science and
-              Microbiology & Immunology</h4>
-              <h5 style={{fontFamily: 'Roboto Mono'}}>
-              Year 3
-              </h5>
-              <hr style={{borderTop: '3px solid #CCC8AB', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
-              <h5>Phone</h5>
-              <Swing>
-                <p><a href="tel:7782883221" style={{textDecoration: 'none', color: '#E3DFBF'}}>(778) 288- 3221</a></p>
-              </Swing>
-              <h5>Email</h5>
-              <Jump>
-                <p><a href="mailto:joshualuong@hotmail.com" style={{ textDecoration: 'none', color: '#E3DFBF'}}>joshualuong@hotmail.com</a></p>
-              </Jump>
-              <h5>LinkedIn</h5>
-              <Jump>
-                <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{ textDecoration: 'none', color: '#E3DFBF'}}>linkedin.com/in/joshua-luong</a></p>
-              </Jump>
-              <hr style={{borderTop: '3px solid #CCC8AB', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
-            <h2>Skills</h2>
-            <h5>Languages And Technologies</h5>
-            <p>Java, C++, JavaScript, React, NodeJS*, Express*, HTML/ CSS</p>
-            <h5>Tools</h5>
-            <p>Git, Perforce, Jira</p>
-            <h5>Databases</h5>
-            <p>MySQL, PostgreSQL, JDBC, ODBC</p>
-            <p>*Currently learning</p>
-              </div>
-          </div>
+                  <div style={{fontFamily: 'Roboto'}}class="floating-div">
+                  <h2 style={{fontFamily: 'Roboto',paddingTop: '0.5em'}}>Joshua Luong</h2>
+                  <h4 style={{fontFamily: 'Roboto'}}>Combined Major in Computer Science and
+                  Microbiology & Immunology</h4>
+                  <h5 style={{fontFamily: 'Roboto'}}>
+                  Year 3
+                  </h5>
+                                <hr style={{ borderTop: '3px solid white', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
+                  <h5>Phone</h5>
+                  <p><a href="tel:7782883221" style={{ textDecoration: 'none', color: '#f0f2f7'}}>(778) 288- 3221</a></p>
+              
+                  <h5>Email</h5>
+                  <p><a href="mailto:joshualuong@hotmail.com" style={{ textDecoration: 'none', color: '#f0f2f7'}}>joshualuong@hotmail.com</a></p>
+              
+                  <h5>LinkedIn</h5>
+                  <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{ textDecoration: 'none', color: '#f0f2f7'}}>linkedin.com/in/joshua-luong</a></p>
+              
+                                <hr style={{ borderTop: '3px solid white', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
+                <h2>Skills</h2>
+                <h5>Languages And Technologies</h5>
+                <p>Java, C++, JavaScript, React, NodeJS*, Express*, HTML/ CSS</p>
+                <h5>Tools</h5>
+                <p>Git, Perforce, Jira</p>
+                <h5>Databases</h5>
+                <p>MySQL, PostgreSQL, JDBC, ODBC</p>
+                <p>*Currently learning</p>
+                  </div>
+                            </div></Bounce>
           </Cell>
-            <div class="mdl-layout-spacer"></div>
-          <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
+                <div class="mdl-layout-spacer"></div>
+         
+              
+                <Cell col={8}>
+                    <div className="resume-right-col" >
+                    <h2>Education</h2>
 
 
-            <Education
-              startYear={2017}
-              endYear={2023}
-              schoolName="The University of British Columbia "
-              schoolDescription="BSc. Combined Computer Science and Microbiology & Immunology"
-              />
-                <hr style={{borderTop: '3px solid #2F2B0E'}} />
+                    <Education
+                      startYear={2017}
+                      endYear={2022}
+                      schoolName="The University of British Columbia "
+                      schoolDescription="BSc. Combined Computer Science and Microbiology & Immunology"
+                      />
+                        <hr style={{borderTop: '3px solid white'}} />
 
-              <h2>Experience</h2>
+                      <h2>Experience</h2>
 
-              <Experience
-                startYear={"Sept 2019"}
-                endYear={"May 2020"}
-                jobName="SAP: Software Developer"
-                jobDescription={ <div><p>Developing analytics, reporting, business intelligence, and data visualization software in backend and front-end (with experience in UI/UX design and software security management) for 50,000+ users</p>
-                                  <p>Shared responsibility for the  <strong style={{color:'#968E50'}}>complete upgrade of the product </strong> by providing critical enhancements on E2E logic, data source connectivity, and UI solutions, given a sensitive timeline</p>
-                                  <p>Aided in development for <strong style={{color:'#968E50'}}>Excel XLSX</strong> report object (text, images, charts, etc.) data-XML conversion with precise formatting calculations- a highly requested exporting feature for the reporting product, and showcased in the beta release</p>
-                                  <p>With JavaScript/ JSP, worked on the on-going migration of front-end Flash to <strong style={{color:'#968E50'}}>SAP UI5 </strong>UI, resulting in a more seamless and modern UI</p>
-                                  <p>Provided efficient and robust solutions to code defects and feature enhancements, while professionally communicating with customers through <strong style={{color:'#968E50'}}>very high priority customer incidents</strong></p>
-                                  <p>Led in front-end and backend report <b style={{color:'#968E50'}}>delivery feature</b> with layers of server, user, and external destination (SMTP, FTP, etc.) logic through usage of various internal APIs and JNI calls</p> </div>}
-                />
-              <hr style={{borderTop: '3px solid #2F2B0E'}} />
-              <h2>Projects</h2>
-              <Experience
-                startEndYear={"June 2020"}
-                jobName="Store-2-Door: Group Academic Programming Project"
-                jobDescription={ <div><p>Developed a <strong style={{color:'#968E50'}}>full stack application</strong> aimed towards immunocompromised individuals during the <strong style={{color:'#968E50'}}>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p>
-                  <p>Contributed to seamless, modern UI using <strong style={{color:'#968E50'}}>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong style={{color:'#968E50'}}>Node.js</strong> matches two users together to fulfil the delivery service </p>
-                  <p>Created efficient <strong style={{color:'#968E50'}}>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p>
-                  <p>Achieved an <strong style={{color:'#968E50'}}>A+</strong> grade for this final project</p> </div>}
-                />
-              <Experience
-                startEndYear={"Feb 2020 | May 2019 "}
-                jobName="Multilevel Snake Game: React Programming Project"
-                jobDescription={ <div><p>Developed a single player snake game using vanilla <strong style={{color:'#968E50'}}>JavaScript, HTML, and CSS </strong>while learning the language</p>
-                  <p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p>
-                  <p>Updated the high scores for both levels after every game using <strong style={{color:'#968E50'}}>localStorage</strong></p>
-                  <p>Redesigned the game to use <strong style={{color:'#968E50'}}>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p> </div>}
-                />
-                <Experience
-                  startEndYear={"May 2019"}
-                  jobName="Clinic Bookings: Java Programming Project"
-                  jobDescription={ <div><p>Designed a <strong style={{color:'#968E50'}}>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p>
-                    <p>Implemented a fixed scheduling rate that uses the <strong style={{color:'#968E50'}}>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p>
-                    <p>Constructed a database in <strong style={{color:'#968E50'}}>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p>
-                    <p>Implemented a GUI using JavaFX </p> </div>}
-                  />
+                      <Experience
+                        startYear={"Sept 2019"}
+                        endYear={"May 2020"}
+                        jobName="SAP: Software Developer"
+                        jobDescription={ <div><p>Developing analytics, reporting, business intelligence, and data visualization software in backend and front-end (with experience in UI/UX design and software security management) for 50,000+ users</p>
+                                          <p>Shared responsibility for the  <strong style={{color:'#8CA2DD'}}>complete upgrade of the product </strong> by providing critical enhancements on E2E logic, data source connectivity, and UI solutions, given a sensitive timeline</p>
+                                          <p>Aided in development for <strong style={{color:'#8CA2DD'}}>Excel XLSX</strong> report object (text, images, charts, etc.) data-XML conversion with precise formatting calculations- a highly requested exporting feature for the reporting product, and showcased in the beta release</p>
+                                          <p>With JavaScript/ JSP, worked on the on-going migration of front-end Flash to <strong style={{color:'#8CA2DD'}}>SAP UI5 </strong>UI, resulting in a more seamless and modern UI</p>
+                                          <p>Provided efficient and robust solutions to code defects and feature enhancements, while professionally communicating with customers through <strong style={{color:'#8CA2DD'}}>very high priority customer incidents</strong></p>
+                                          <p>Led in front-end and backend report <b style={{color:'#8CA2DD'}}>delivery feature</b> with layers of server, user, and external destination (SMTP, FTP, etc.) logic through usage of various internal APIs and JNI calls</p> </div>}
+                        />
+                      <hr style={{borderTop: '3px solid white'}} />
+                      <h2>Projects</h2>
+                      <Experience
+                        startEndYear={"June 2020"}
+                        jobName="Store-2-Door: Group Academic Programming Project"
+                        jobDescription={ <div><p>Developed a <strong style={{color:'#8CA2DD'}}>full stack application</strong> aimed towards immunocompromised individuals during the <strong style={{color:'#8CA2DD'}}>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p>
+                          <p>Contributed to seamless, modern UI using <strong style={{color:'#8CA2DD'}}>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong style={{color:'#8CA2DD'}}>Node.js</strong> matches two users together to fulfil the delivery service </p>
+                          <p>Created efficient <strong style={{color:'#8CA2DD'}}>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p>
+                          <p>Achieved an <strong style={{color:'#8CA2DD'}}>A+</strong> grade for this final project</p> </div>}
+                        />
+                      <Experience
+                        startEndYear={"Feb 2020 | May 2019 "}
+                        jobName="Multilevel Snake Game: React Programming Project"
+                        jobDescription={ <div><p>Developed a single player snake game using vanilla <strong style={{color:'#8CA2DD'}}>JavaScript, HTML, and CSS </strong>while learning the language</p>
+                          <p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p>
+                          <p>Updated the high scores for both levels after every game using <strong style={{color:'#8CA2DD'}}>localStorage</strong></p>
+                          <p>Redesigned the game to use <strong style={{color:'#8CA2DD'}}>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p> </div>}
+                        />
+                        <Experience
+                          startEndYear={"May 2019"}
+                          jobName="Clinic Bookings: Java Programming Project"
+                          jobDescription={ <div><p>Designed a <strong style={{color:'#8CA2DD'}}>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p>
+                            <p>Implemented a fixed scheduling rate that uses the <strong style={{color:'#8CA2DD'}}>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p>
+                            <p>Constructed a database in <strong style={{color:'#8CA2DD'}}>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p>
+                            <p>Implemented a GUI using JavaFX </p> </div>}
+                          />
 
-
-
-          </Cell>
+                        <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white'}}>Click to view resume</a>
+                    </div>
+                    
+                </Cell>
+                
+                
         </Grid>
       </div>
     )

@@ -10,7 +10,7 @@ class About extends Component {
           <Cell col={12}>
 
             <div className="banner-text" id="about-me-text">
-              <h1>About Me</h1>
+              <h2>About Me</h2>
               <p>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
               I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)
               is baking/ cooking. I love exloring new recipies and cuisines. Talk to me about the great outdoors!</p>

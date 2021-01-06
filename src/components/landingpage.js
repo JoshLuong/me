@@ -72,7 +72,7 @@ class Landing extends Component {
             <div className="banner-text" >
               <Bounce left duration={1000}>
                 <h1 id ="landing-title">Software Developer</h1>
-                <h5 style= {{ fontFamily: 'Roboto Mono', color:'white', size:'2em', marginTop: '0'}}>Frontend | Backend</h5>
+                <h5 style= {{ fontFamily: 'Roboto', color:'white', size:'2em', marginTop: '0'}}>Frontend | Backend</h5>
               </Bounce>
 
 
@@ -86,7 +86,7 @@ class Landing extends Component {
             <div className="banner-text" >
             <Bounce right duration={700} delay={300}>
               <br/>
-              <p style= {{fontSize:'1.5em', marginTop:'2em', marginBottom:'2em', padding:'10'}}>Currently Seeking <strong style={{color:'#968E50'}}>2021</strong> Internships !</p>
+                            <p style={{ fontSize: '1.5em', marginTop: '2em', marginBottom: '2em', padding: '10' }}>Currently Seeking <strong style={{ color:'#8CA2DD'}}>2021</strong> Internships !</p>
               <br/>
             </Bounce>
             </div>
