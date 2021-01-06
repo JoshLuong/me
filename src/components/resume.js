@@ -37,7 +37,7 @@ class Resume extends Component {
                                 <hr style={{ borderTop: '3px solid white', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
                 <h2>Skills</h2>
                 <h5>Languages And Technologies</h5>
-                <p>Java, C++, JavaScript, React, NodeJS*, Express*, HTML/ CSS</p>
+                <p>Java, C++, JavaScript, React*, NodeJS*, HTML/ CSS</p>
                 <h5>Tools</h5>
                 <p>Git, Perforce, Jira</p>
                 <h5>Databases</h5>
