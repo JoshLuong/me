@@ -11,12 +11,11 @@ class Resume extends Component {
   render() {
     return(
       <div className= 'landing-grid'style={{  fontFamily: 'Roboto'}}>
+                <div class="mdl-layout-spacer"></div>
             <Grid style={{ paddingTop: '10em' }}>
-
-          <div class="mdl-layout-spacer"></div>
-                <Cell col={4}>
+                    <Cell col={4} tablet={12} phone={12} >
                     <Bounce left duration={700} delay={300}>
-                        <div className="resume-personal-info" style={{ color: '#f0f2f7', background: 'rgba(112,129,176,0.65)' }} >
+                        <div className="resume-personal-info" style={{ color: '#f0f2f7', background: 'rgba(112,129,176,0.65)', height: '100%', overflow: 'auto' }} >
                   <div style={{textAlign: 'center'}}>
                     <img class="avatar-resume-img"
                       src={avatar}
@@ -32,15 +31,8 @@ class Resume extends Component {
                   <h5 style={{fontFamily: 'Roboto'}}>
                   Year 3
                   </h5>
-                                <hr style={{ borderTop: '3px solid white', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
-                  <h5>Phone</h5>
-                  <p><a href="tel:7782883221" style={{ textDecoration: 'none', color: '#f0f2f7'}}>(778) 288- 3221</a></p>
-              
-                  <h5>Email</h5>
-                  <p><a href="mailto:joshualuong@hotmail.com" style={{ textDecoration: 'none', color: '#f0f2f7'}}>joshualuong@hotmail.com</a></p>
-              
-                  <h5>LinkedIn</h5>
-                  <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{ textDecoration: 'none', color: '#f0f2f7'}}>linkedin.com/in/joshua-luong</a></p>
+
+
               
                                 <hr style={{ borderTop: '3px solid white', width: '75%',  marginLeft: 'auto', marginRight: 'auto'}}/>
                 <h2>Skills</h2>
@@ -50,16 +42,16 @@ class Resume extends Component {
                 <p>Git, Perforce, Jira</p>
                 <h5>Databases</h5>
                 <p>MySQL, PostgreSQL, JDBC, ODBC</p>
-                                <p style={{paddingBottom: '0.75em'}}>*Currently learning</p>
+                                <p>*Currently learning</p>
                   </div>
                             </div></Bounce>
           </Cell>
                 <div class="mdl-layout-spacer"></div>
          
               
-                <Cell col={8}>
-                    <div className="resume-right-col" >
-                    <h2>Education</h2>
+                    <Cell col={8} tablet={12} phone={12}>
+                        <div className="resume-right-col">
+                            <h2 style={{marginTop: '0', paddingTop:'1em'}}>Education</h2>
 
 
                     <Education
@@ -83,40 +75,44 @@ class Resume extends Component {
                                           <p>Provided efficient and robust solutions to code defects and feature enhancements, while professionally communicating with customers through <strong style={{color:'#8CA2DD'}}>very high priority customer incidents</strong></p>
                                           <p>Led in front-end and backend report <b style={{color:'#8CA2DD'}}>delivery feature</b> with layers of server, user, and external destination (SMTP, FTP, etc.) logic through usage of various internal APIs and JNI calls</p> </div>}
                         />
-                      <hr style={{borderTop: '3px solid white'}} />
-                      <h2>Projects</h2>
-                      <Experience
-                        startEndYear={"June 2020"}
-                        jobName="Store-2-Door: Group Academic Programming Project"
-                        jobDescription={ <div><p>Developed a <strong style={{color:'#8CA2DD'}}>full stack application</strong> aimed towards immunocompromised individuals during the <strong style={{color:'#8CA2DD'}}>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p>
-                          <p>Contributed to seamless, modern UI using <strong style={{color:'#8CA2DD'}}>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong style={{color:'#8CA2DD'}}>Node.js</strong> matches two users together to fulfil the delivery service </p>
-                          <p>Created efficient <strong style={{color:'#8CA2DD'}}>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p>
-                          <p>Achieved an <strong style={{color:'#8CA2DD'}}>A+</strong> grade for this final project</p> </div>}
-                        />
-                      <Experience
-                        startEndYear={"Feb 2020 | May 2019 "}
-                        jobName="Multilevel Snake Game: React Programming Project"
-                        jobDescription={ <div><p>Developed a single player snake game using vanilla <strong style={{color:'#8CA2DD'}}>JavaScript, HTML, and CSS </strong>while learning the language</p>
-                          <p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p>
-                          <p>Updated the high scores for both levels after every game using <strong style={{color:'#8CA2DD'}}>localStorage</strong></p>
-                          <p>Redesigned the game to use <strong style={{color:'#8CA2DD'}}>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p> </div>}
-                        />
-                        <Experience
-                          startEndYear={"May 2019"}
-                          jobName="Clinic Bookings: Java Programming Project"
-                          jobDescription={ <div><p>Designed a <strong style={{color:'#8CA2DD'}}>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p>
-                            <p>Implemented a fixed scheduling rate that uses the <strong style={{color:'#8CA2DD'}}>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p>
-                            <p>Constructed a database in <strong style={{color:'#8CA2DD'}}>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p>
-                            <p>Implemented a GUI using JavaFX </p> </div>}
-                          />
-
-                        <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white'}}>Click to view resume</a>
+                      
                     </div>
                     
+                    </Cell>
+                <Cell col={12}>
+                    <div className="resume-right-col" style={{ marginBottom: '3em' }}>
+                        <h2 style={{paddingTop:'1em'}}>Projects</h2>
+                    <Experience
+                        startEndYear={"June 2020"}
+                        jobName="Store-2-Door: Group Academic Programming Project"
+                        jobDescription={<div><p>Developed a <strong style={{ color: '#8CA2DD' }}>full stack application</strong> aimed towards immunocompromised individuals during the <strong style={{ color: '#8CA2DD' }}>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p>
+                            <p>Contributed to seamless, modern UI using <strong style={{ color: '#8CA2DD' }}>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong style={{ color: '#8CA2DD' }}>Node.js</strong> matches two users together to fulfil the delivery service </p>
+                            <p>Created efficient <strong style={{ color: '#8CA2DD' }}>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p>
+                            <p>Achieved an <strong style={{ color: '#8CA2DD' }}>A+</strong> grade for this final project</p> </div>}
+                    />
+                    <Experience
+                        startEndYear={"Feb 2020 | May 2019 "}
+                        jobName="Multilevel Snake Game: React Programming Project"
+                        jobDescription={<div><p>Developed a single player snake game using vanilla <strong style={{ color: '#8CA2DD' }}>JavaScript, HTML, and CSS </strong>while learning the language</p>
+                            <p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p>
+                            <p>Updated the high scores for both levels after every game using <strong style={{ color: '#8CA2DD' }}>localStorage</strong></p>
+                            <p>Redesigned the game to use <strong style={{ color: '#8CA2DD' }}>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p> </div>}
+                    />
+                    <Experience
+                        startEndYear={"May 2019"}
+                        jobName="Clinic Bookings: Java Programming Project"
+                        jobDescription={<div><p>Designed a <strong style={{ color: '#8CA2DD' }}>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p>
+                            <p>Implemented a fixed scheduling rate that uses the <strong style={{ color: '#8CA2DD' }}>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p>
+                            <p>Constructed a database in <strong style={{ color: '#8CA2DD' }}>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p>
+                            <p>Implemented a GUI using JavaFX </p> </div>}
+                    />
+
+                        <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em' }}>Click to view resume</a>
+                        <p style={{padding: '1em'}}></p>
+                </div>
                 </Cell>
-                
-                
-        </Grid>
+            </Grid>
+            
       </div>
     )
   }

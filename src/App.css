@@ -56,7 +56,8 @@
     background: #444E74;
     color: white;
     text-align: left;
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .resume-right-col p {
@@ -110,7 +111,7 @@ font-family: 'Roboto';
 
 .contact-grid hr {
     color: white;
-    border-top: 5px dotted white;
+    border-top: 3px solid white;
     width: 80%;
     margin: auto;
 }
