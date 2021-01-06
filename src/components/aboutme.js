@@ -10,7 +10,7 @@ class About extends Component {
           <Cell col={12}>
 
                     <div className="banner-text" id="about-me-text">
-                        <h2 style={{ color: 'black' }}>About Me</h2>
+                        <h2 style={{ color: 'black' }}><i className="fas fa-address-card" aria-hidden="true" style={{ color: 'black' }} /> About Me</h2>
                         <div style={{ textAlign: 'left' }}>
                         <p style={{ color: 'black' }}>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
               I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)

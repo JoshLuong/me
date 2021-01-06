@@ -51,7 +51,7 @@ class Resume extends Component {
               
                     <Cell col={8} tablet={12} phone={12}>
                         <div className="resume-right-col">
-                            <h2 style={{marginTop: '0', paddingTop:'1em'}}>Education</h2>
+                        <h2 style={{ marginTop: '0', paddingTop: '1em' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
 
 
                     <Education
@@ -62,7 +62,7 @@ class Resume extends Component {
                       />
                         <hr style={{borderTop: '3px solid white'}} />
 
-                      <h2>Experience</h2>
+                        <h2><i className="fas fa-briefcase" aria-hidden="true" style={{ color: 'black' }} /> Experience</h2>
 
                       <Experience
                         startYear={"Sept 2019"}
@@ -81,7 +81,7 @@ class Resume extends Component {
                     </Cell>
                 <Cell col={12}>
                     <div className="resume-right-col" style={{ marginBottom: '3em' }}>
-                        <h2 style={{paddingTop:'1em'}}>Projects</h2>
+                        <h2 style={{ paddingTop: '1em' }}><i className="fas fa-file-code" aria-hidden="true" style={{ color: 'black' }} /> Projects</h2>
                     <Experience
                         startEndYear={"June 2020"}
                         jobName="Store-2-Door: Group Academic Programming Project"
@@ -107,7 +107,7 @@ class Resume extends Component {
                             <p>Implemented a GUI using JavaFX </p> </div>}
                     />
 
-                        <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em' }}>Click to view resume</a>
+                        <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>Click to view resume</a>
                         <p style={{padding: '1em'}}></p>
                 </div>
                 </Cell>
