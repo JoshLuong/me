@@ -14,7 +14,7 @@ class About extends Component {
                         <div style={{ textAlign: 'left' }}>
                         <p style={{ color: 'black' }}>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
               I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)
-              is baking/ cooking. I love exloring new recipies and cuisines. Talk to me about the great outdoors!</p>
+              is baking/ cooking. I love exploring new recipies and cuisines. Talk to me about the great outdoors!</p>
                         <p style={{ color: 'black' }}>I have previously worked in agile development team settings, where I focused on feature development in both backend
               and front-end, developing high quality, scalable features from start to finish. Through my work terms,
               I have gained valuable experience on how to efficiently find solutions to tough problems.

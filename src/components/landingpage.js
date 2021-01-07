@@ -81,7 +81,7 @@ class Landing extends Component {
 
             </div>
             <div className="banner-text" >
-            <Bounce  duration={700} delay={1500}>
+                        <Bounce duration={window.innerWidth > 400 ? '700' : '0'} delay={window.innerWidth > 400 ? '1500' : '0'}>
               <br/>
                             <p style={{ fontSize: '1.5em', marginTop: '2em', marginBottom: '2em', padding: '10', color: 'black' }}>Currently Seeking <strong style={{ color:'#8CA2DD'}}>2021</strong> Internships !</p>
               <br/>
