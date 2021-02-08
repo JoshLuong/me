@@ -11,7 +11,7 @@ class Contact extends Component {
           <div class="mdl-layout-spacer"></div>
             <div class="mdl-layout-spacer"></div>
                 <Cell col={12} className="contact-grid">
-                    <div style={{ opacity: '0.7', backgroundColor: 'white' }} >
+                    <div style={{ opacity: '0.95', backgroundColor: 'white' }} >
                        
                         <div><h2 style={{ paddingTop: '1 em', color: 'black' }}><i className="fas fa-id-badge" aria-hidden="true" style={{ color: 'black' }} /> Contact me here            <div style={{ display: 'inline-block' }}>
                             <Blink fontFamily='Roboto' textDecoration='none' color='black'text='|'></Blink>
