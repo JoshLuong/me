@@ -5,6 +5,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
+    box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -12,6 +13,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(44,51,70, 0.8);
@@ -21,17 +23,35 @@
     ::-webkit-scrollbar-thumb:window-inactive {
         background: rgba(44,51,70, 0.8);
     }
+
 .header-color {
-    background: #8CA2DD; /* fallback for old browsers */
-    opacity: 0.8;
+    background: #E8ECF8; /* fallback for old browsers */
+    opacity: 0.95;
     font-family: 'Roboto';
-    background: -webkit-linear-gradient(to right, #8CA2DD #8CA2DD); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8CA2DD, #8CA2DD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .resume-personal-info{
   text-align: center;
 
 }
+@media screen and (min-width: 1024px){
+  .mdl-layout .mdl-layout__drawer-button i {
+    color: black !important;
+    line-height: 2 !important;
+  }
+}
+@media screen and (max-width: 1024px){
+  .mdl-layout .mdl-layout__drawer-button i {
+    color: white !important;
+    line-height: 2 !important;
+    font-size: 30px !important;
+    left: auto;
+    right: 1  !important;
+    position: fixed !important;
+  }
+}
+
 
 .landing-grid {
   background-image: url('./img/blue_bgnd.jpg');
@@ -84,11 +104,15 @@
 
 .contact-grid {
     text-align: center;
+    opacity: 0.95;
+    background-color: white;
     justify-content: center;
     width: 80%;
     color: black;
     margin-bottom: 20px;
     margin-top: 5em;
+    font-size: 20px;
+    font-family: Roboto;
 }
 
 .contact-div{
@@ -96,12 +120,6 @@
   margin-top: 10em;
 }
 
-.contact-grid h2 {
-  color:white;
-font-family: 'Roboto';
-padding-top: 0.75em;
-
-}
 
 .contact-grid p {
 font-family: 'Roboto';
@@ -159,11 +177,13 @@ font-family: 'Roboto';
     margin: -20px 0;
 }
 
-@media (max-width: 479px)
-.mdl-cell {
+@media (max-width: 479px){
+  .mdl-cell {
     margin: 0px;
     width: calc(100% - 16px);
 }
+}
+
 
 #about-me-text{
   font-size: 44px;
@@ -172,9 +192,11 @@ font-family: 'Roboto';
     margin: 0px  ! Important;
 }
 
-@media (max-width: 479px)
-#no-margin {
+@media (max-width: 479px){
+  #no-margin {
     margin: 0px  ! Important;
+}
+  
 }
 
 .banner-text h1 {
@@ -187,7 +209,7 @@ font-family: 'Roboto';
   font-size: 55px;
   padding-top: 0.3em;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .banner-text hr {
@@ -197,7 +219,7 @@ font-family: 'Roboto';
 }
 
 .banner-text p {
-    color: white;
+    color: black;
     font-size: 20px;
     padding-top: 0em;
     padding-left: 0.85em;

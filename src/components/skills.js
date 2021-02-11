@@ -3,10 +3,10 @@ import { Grid, Cell, ProgressBar } from 'react-mdl';
 
 class Skills extends Component {
   render() {
-    return(
+    return (
       <Grid>
         <Cell col={12}>
-          <div style={{display: 'flex'}}>{this.props.skill}  </div>
+          <div style={{ display: 'flex' }}>{this.props.skill}  </div>
         </Cell>
       </Grid>
     )

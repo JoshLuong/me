@@ -5,49 +5,55 @@ import Blink from 'react-blink-text';
 
 class Contact extends Component {
   render() {
-    return(
+    return (
       <div className=" landing-grid">
-        <Grid style={{paddingTop:'10em',   justifyContent: 'center'}}>
+        <Grid style={{ paddingTop: '10em', justifyContent: 'center' }}>
           <div class="mdl-layout-spacer"></div>
-            <div class="mdl-layout-spacer"></div>
-                <Cell col={12} className="contact-grid">
-                    <div style={{ opacity: '0.95', backgroundColor: 'white' }} >
-                       
-                        <div><h2 style={{ paddingTop: '1 em', color: 'black' }}><i className="fas fa-id-badge" aria-hidden="true" style={{ color: 'black' }} /> Contact me here            <div style={{ display: 'inline-block' }}>
-                            <Blink fontFamily='Roboto' textDecoration='none' color='black'text='|'></Blink>
-                        </div> </h2>  </div>     
-                        <hr/>
+          <div class="mdl-layout-spacer"></div>
+          <Cell col={12} className="contact-grid">
+            <div>
 
-            <div style = {{fontSize: '20px', color: 'black', fontFamily: 'Roboto',}}className="contact-list">
-              <List className="center-style">
-              <ListItem className="center-style">
-                                    <ListItemContent className="list-content center-style">
-                                        <i className="fab fa-linkedin" aria-hidden="true" style={{ color: 'black' }} />
-                  <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{fontSize: '20px', textDecoration: 'none', color: 'black'}}>linkedin.com/in/joshua-luong</a></p>
-                </ListItemContent>
-              </ListItem>
-                <ListItem className="center-style">
-                <Swing count={1}duration={2000} >
-                  <ListItemContent className="list-content center-style" style={{width:"100%"}}>
-                                            <i className="fa fa-phone-square" aria-hidden="true" style={{ color: 'black'}}/>
-                                            <p><a href="tel:7782883221" style={{ fontSize: '20px', textDecoration: 'none', color: 'black'}}>(778) 288- 3221</a></p>
-                  </ListItemContent>
-                  </Swing>
-                </ListItem>
-                <ListItem className="center-style">
-                  <ListItemContent className="list-content center-style">
-                                        <i style={{ color: 'black' }} className="fa fa-envelope center-style" aria-hidden="true"/>
-                                        <p><a href="mailto:joshualuong@hotmail.com" style={{ fontSize: '20px', textDecoration: 'none', color: 'black'}}>joshualuong@hotmail.com</a></p>
-                  </ListItemContent>
-                </ListItem>
+              <div>
+                <h2 style={{ paddingTop: '1 em', color: 'black' }}>
+                  <i className="fas fa-id-badge" aria-hidden="true" style={{ color: 'black' }} /> 
+                  Contact me here            
+                  <div style={{ display: 'inline-block' }}>
+                    <Blink fontFamily='Roboto' textDecoration='none' color='black' text='|'></Blink>
+                  </div>
+                </h2>
+              </div>
+              <hr />
+
+              <div className="contact-list">
+                <List className="center-style">
+                  <ListItem className="center-style">
+                    <ListItemContent className="list-content center-style">
+                      <i className="fab fa-linkedin" aria-hidden="true" style={{ color: 'black' }} />
+                      <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{ fontSize: '20px', textDecoration: 'none', color: 'black' }}>linkedin.com/in/joshua-luong</a></p>
+                    </ListItemContent>
+                  </ListItem>
+                  <ListItem className="center-style">
+                    <Swing count={1} duration={2000} >
+                      <ListItemContent className="list-content center-style" style={{ width: "100%" }}>
+                        <i className="fa fa-phone-square" aria-hidden="true" style={{ color: 'black' }} />
+                        <p><a href="tel:7782883221" style={{ fontSize: '20px', textDecoration: 'none', color: 'black' }}>(778) 288- 3221</a></p>
+                      </ListItemContent>
+                    </Swing>
+                  </ListItem>
+                  <ListItem className="center-style">
+                    <ListItemContent className="list-content center-style">
+                      <i style={{ color: 'black' }} className="fa fa-envelope center-style" aria-hidden="true" />
+                      <p><a href="mailto:joshualuong@hotmail.com" style={{ fontSize: '20px', textDecoration: 'none', color: 'black' }}>joshualuong@hotmail.com</a></p>
+                    </ListItemContent>
+                  </ListItem>
 
 
-              </List>
+                </List>
+              </div>
             </div>
-            </div>
-            <br/>
+            <br />
           </Cell>
-            <Cell col={12}></Cell>
+          <Cell col={12}></Cell>
         </Grid>
       </div>
     )

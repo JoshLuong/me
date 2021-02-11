@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 class Projects extends Component {
   render() {
-    return(
+    return (
       <div>
-      Put projects here in future
+        Put projects here in future
 
       </div>
     )
