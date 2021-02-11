@@ -20,7 +20,7 @@ class App extends Component {
             className="header-color"
             title={
               <div>
-                <Link style={{ fontFamily: 'Roboto', textDecoration: 'none', color: 'black', fontSize: '2.5em', float: 'left' }} to="/">
+                    <Link style={{ fontFamily: 'Roboto', textDecoration: 'none', color: '#323232', fontSize: '2.5em', float: 'left' }} to="/">
 
                   josh luong
 

@@ -108,7 +108,7 @@
     background-color: white;
     justify-content: center;
     width: 80%;
-    color: black;
+    color: #323232;
     margin-bottom: 20px;
     margin-top: 5em;
     font-size: 20px;
@@ -128,7 +128,7 @@ font-family: 'Roboto';
 }
 
 .contact-grid hr {
-    color: black;
+    color: #323232;
     border-top: 3px solid black;
     width: 80%;
     margin: auto;
@@ -164,13 +164,13 @@ font-family: 'Roboto';
 }
 
 .banner-text {
-  background-color: white;
-  color: black;
-  opacity: .95;
-  width: 90%;
-  margin: auto;
-  border-radius: 0.25em;
-  margin-top:2em;
+    background-color: white;
+    color: #323232;
+    opacity: .95;
+    width: 90%;
+    margin: auto;
+    border-radius: 0.25em;
+    margin-top: 2em;
 }
 
 .mdl-textfield {
@@ -209,7 +209,7 @@ font-family: 'Roboto';
   font-size: 55px;
   padding-top: 0.3em;
   font-weight: bold;
-  color: black;
+  color: #323232;
 }
 
 .banner-text hr {
