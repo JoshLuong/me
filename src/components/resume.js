@@ -14,7 +14,7 @@ class Resume extends Component {
         <Grid style={{ paddingTop: '10em' }}>
           <Cell col={4} tablet={12} phone={12} >
             <Bounce left duration={700} delay={300}>
-              <div className="resume-personal-info" style={{ color: '#f0f2f7', background: 'rgba(112,129,176,0.65)', height: '100%', overflow: 'auto' }} >
+              <div className="resume-personal-info" style={{ color: '#323232', background: 'rgba(255,255,255,0.9)', height: '100%', overflow: 'auto' }} >
                 <div style={{ textAlign: 'center' }}>
                   <img class="avatar-resume-img"
                     src={avatar}
@@ -33,7 +33,7 @@ class Resume extends Component {
 
 
 
-                  <hr style={{ borderTop: '3px solid white', width: '75%', marginLeft: 'auto', marginRight: 'auto' }} />
+                  <hr style={{ borderTop: '3px solid #323232', width: '75%', marginLeft: 'auto', marginRight: 'auto' }} />
                   <h2>Skills</h2>
                   <h5>Languages And Technologies</h5>
                   <p>Java, C++, JavaScript, React*, NodeJS*, HTML/ CSS</p>

@@ -41,7 +41,7 @@ class About extends Component {
                   <span class="star on"></span>
                   <span class="star on"></span>
                   <span class="star on"></span>
-                  <span class="star half"></span>
+                  <span class="star on"></span>
 
                 </div>
               </Fade>

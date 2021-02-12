@@ -10,20 +10,16 @@ class Contact extends Component {
         <Grid style={{ paddingTop: '10em', justifyContent: 'center' }}>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-layout-spacer"></div>
-          <Cell col={12} className="contact-grid">
-            <div>
 
-              <div>
+          <Cell col={12} className="contact-grid">
+          <div>
                   <h2 style={{ paddingTop: '1 em', color: '#323232' }}>
                   <i className="fas fa-id-badge" aria-hidden="true" style={{ color: '#323232' }} /> 
-                  Contact me here            
-                  <div style={{ display: 'inline-block' }}>
-                    <Blink fontFamily='Roboto' textDecoration='none' color='black' text='|'></Blink>
-                  </div>
+                  Contact Me
                 </h2>
-              </div>
-              <hr />
-
+              </div></Cell>
+          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}>
+            <div>
               <div className="contact-list">
                 <List className="center-style">
                   <ListItem className="center-style">
@@ -32,6 +28,15 @@ class Contact extends Component {
                       <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-luong/" style={{ fontSize: '20px', textDecoration: 'none', color: 'black' }}>linkedin.com/in/joshua-luong</a></p>
                     </ListItemContent>
                   </ListItem>
+                </List>
+              </div>
+            </div>
+            <br />
+          </Cell>
+          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}>
+            <div>
+              <div className="contact-list">
+                <List className="center-style">
                   <ListItem className="center-style">
                     <Swing count={1} duration={2000} >
                       <ListItemContent className="list-content center-style" style={{ width: "100%" }}>
@@ -40,6 +45,15 @@ class Contact extends Component {
                       </ListItemContent>
                     </Swing>
                   </ListItem>
+                </List>
+              </div>
+            </div>
+            <br />
+          </Cell>
+          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}> 
+            <div>
+              <div className="contact-list">
+                <List className="center-style">
                   <ListItem className="center-style">
                     <ListItemContent className="list-content center-style">
                       <i style={{ color: '#323232' }} className="fa fa-envelope center-style" aria-hidden="true" />
