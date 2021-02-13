@@ -9,46 +9,12 @@ import Bounce from 'react-reveal/Bounce'
 class Resume extends Component {
   render() {
     return (
-      <div className='landing-grid'>
+      <div>
         <div class="mdl-layout-spacer"></div>
-        <Grid style={{ paddingTop: '10em' }}>
-          <Cell col={4} tablet={12} phone={12} >
-            <Bounce left duration={700} delay={300}>
-              <div className="resume-personal-info" style={{ color: '#323232', background: 'rgba(255,255,255,0.9)', height: '100%', overflow: 'auto' }} >
-                <div style={{ textAlign: 'center' }}>
-                  <img class="avatar-resume-img"
-                    src={avatar}
-                    alt="avatar"
-                    style={{ height: '200px' }}
-                  />
-                </div>
-
-                <div class="floating-div">
-                  <h2 style={{paddingTop: '0.5em' }}>Joshua Luong</h2>
-                  <h4 >Combined Major in Computer Science and
-                  Microbiology & Immunology</h4>
-                  <h5 >
-                    Year 3
-                  </h5>
+        <Grid style={{ paddingTop: '10em !important' , margin: '0 !important', padding: '0 !important'}}>
 
 
-
-                  <hr style={{ borderTop: '3px solid #323232', width: '75%', marginLeft: 'auto', marginRight: 'auto' }} />
-                  <h2>Skills</h2>
-                  <h5>Languages And Technologies</h5>
-                  <p>Java, C++, JavaScript, React*, NodeJS*, HTML/ CSS</p>
-                  <h5>Tools</h5>
-                  <p>Git, Perforce, Jira</p>
-                  <h5>Databases</h5>
-                  <p>MySQL, PostgreSQL, JDBC, ODBC</p>
-                  <p>*Currently learning</p>
-                </div>
-              </div></Bounce>
-          </Cell>
-          <div class="mdl-layout-spacer"></div>
-
-
-          <Cell col={8} tablet={12} phone={12}>
+          <Cell col={12} tablet={12} phone={12} style={{margin: '0 !important', padding: '0 !important'}}>
             <div className="resume-right-col">
               <h2 style={{ marginTop: '0', paddingTop: '1em' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
 
@@ -118,3 +84,38 @@ class Resume extends Component {
 }
 
 export default Resume;
+/*          <Cell col={4} tablet={12} phone={12} >
+            <Bounce left duration={700} delay={300}>
+              <div className="resume-personal-info" style={{ color: '#323232', background: 'rgba(255,255,255,0.9)', height: '100%', overflow: 'auto' }} >
+                <div style={{ textAlign: 'center' }}>
+                  <img class="avatar-resume-img"
+                    src={avatar}
+                    alt="avatar"
+                    style={{ height: '200px' }}
+                  />
+                </div>
+
+                <div class="floating-div">
+                  <h2 style={{paddingTop: '0.5em' }}>Joshua Luong</h2>
+                  <h4 >Combined Major in Computer Science and
+                  Microbiology & Immunology</h4>
+                  <h5 >
+                    Year 3
+                  </h5>
+
+
+
+                  <hr style={{ borderTop: '3px solid #323232', width: '75%', marginLeft: 'auto', marginRight: 'auto' }} />
+                  <h2>Skills</h2>
+                  <h5>Languages And Technologies</h5>
+                  <p>Java, C++, JavaScript, React*, NodeJS*, HTML/ CSS</p>
+                  <h5>Tools</h5>
+                  <p>Git, Perforce, Jira</p>
+                  <h5>Databases</h5>
+                  <p>MySQL, PostgreSQL, JDBC, ODBC</p>
+                  <p>*Currently learning</p>
+                </div>
+              </div></Bounce>
+          </Cell>
+
+*/

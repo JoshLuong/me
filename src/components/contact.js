@@ -6,19 +6,19 @@ import Blink from 'react-blink-text';
 class Contact extends Component {
   render() {
     return (
-      <div className=" landing-grid">
-        <Grid style={{ paddingTop: '10em', justifyContent: 'center' }}>
+      <div style={{ position: 'relative' }}>
+        <Grid style={{ justifyContent: 'center' }}>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-layout-spacer"></div>
 
           <Cell col={12} className="contact-grid">
-          <div>
-                  <h2 style={{ paddingTop: '1 em', color: '#323232' }}>
-                  <i className="fas fa-id-badge" aria-hidden="true" style={{ color: '#323232' }} /> 
+            <div>
+              <h2 style={{ paddingTop: '1 em', color: '#323232' }}>
+                <i className="fas fa-id-badge" aria-hidden="true" style={{ color: '#323232' }} />
                   Contact Me
                 </h2>
-              </div></Cell>
-          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}>
+            </div></Cell>
+          <Cell col={4} className="contact-grid" style={{ borderTop: '5px solid' }}>
             <div>
               <div className="contact-list">
                 <List className="center-style">
@@ -33,7 +33,7 @@ class Contact extends Component {
             </div>
             <br />
           </Cell>
-          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}>
+          <Cell col={4} className="contact-grid" style={{ borderTop: '5px solid' }}>
             <div>
               <div className="contact-list">
                 <List className="center-style">
@@ -50,7 +50,7 @@ class Contact extends Component {
             </div>
             <br />
           </Cell>
-          <Cell col={4} className="contact-grid" style={{borderTop: '5px solid'}}> 
+          <Cell col={4} className="contact-grid" style={{ borderTop: '5px solid' }}>
             <div>
               <div className="contact-list">
                 <List className="center-style">

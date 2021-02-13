@@ -8,7 +8,9 @@ import avatar4 from '../img/thumbnail_image4.png'
 import Bounce from 'react-reveal/Bounce'
 import { Slide } from 'react-slideshow-image';
 import Typing from 'react-typing-animation';
-
+import Contact from './contact';
+import AboutMe from './aboutme';
+import Resume from './resume';
 // using MDL similar to bootsrap
 // inline style
 //5ki
@@ -60,9 +62,9 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div style={{ width: '100%', margin: 'auto' }}>
-        <Grid id="no-margin" className="mdl-grid--no-spacing landing-grid">
-          <Cell className="mdl-grid--no-spacing" id="no-margin" col={12} style={{ margin: 'auto', position: 'absolute' }}>
+      <div style={{ width: '100%', margin: 'auto' }} className = "landing-grid">
+        <Grid id="no-margin" className="mdl-grid--no-spacing">
+          <Cell className="mdl-grid--no-spacing" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
             <div>
               {this.Slideshow()}
             </div>
@@ -76,21 +78,22 @@ class Landing extends Component {
 
               <p>HTML5/ CSS3 | JavaScript (ES6) | ReactJS | NodeJS </p>
               <p id="bottom_p">Java | C++ | MySQL | PostgreSQL</p>
-
-
-            </div>
-            <div className="banner-text" >
+              <div style ={{borderTop: '3px solid', width: '90%', margin: 'auto'}}>
               <Bounce duration={window.innerWidth > 400 ? '700' : '0'} delay={window.innerWidth > 400 ? '1500' : '0'}>
                 <br />
                 <p style={{ fontSize: '1.5em', marginTop: '2em', marginBottom: '2em', padding: '10' }}>
                   Currently Seeking <strong style={{ color: '#8CA2DD' }}>2021</strong> Internships !</p>
                 <br />
               </Bounce>
+              </div>
             </div>
             <br />
           </Cell>
           <p></p>
         </Grid>
+        <Resume/>
+        <AboutMe/>
+        <Contact/>
       </div>
     )
   }

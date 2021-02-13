@@ -26,7 +26,7 @@
 
 .header-color {
     background: #E8ECF8; /* fallback for old browsers */
-    opacity: 0.95;
+    opacity: 0.8;
     font-family: 'Roboto';
     background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -40,6 +40,10 @@
     color: black !important;
     line-height: 2 !important;
   }
+}
+
+.mdl-grid{
+  padding: 0 !important;
 }
 @media screen and (max-width: 1024px){
   .mdl-layout .mdl-layout__drawer-button i {
@@ -167,10 +171,10 @@ font-family: 'Roboto';
     background-color: white;
     color: #323232;
     opacity: .95;
-    width: 90%;
     margin: auto;
-    border-radius: 0.25em;
     margin-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .mdl-textfield {
@@ -200,7 +204,6 @@ font-family: 'Roboto';
 }
 
 .banner-text h1 {
-  font-size: 3em;
   font-weight: bold;
   color: white;
 }

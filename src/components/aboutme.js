@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div style={{ width: '100%', margin: 'auto' }}>
-        <Grid className="landing-grid mdl-grid--no-spacing">
+        <Grid className=" mdl-grid--no-spacing">
           <Cell col={12}>
 
             <div className="banner-text" id="about-me-text">
@@ -31,10 +31,7 @@ class About extends Component {
                 while also producing creative solutions that commit to quality. This was especially evident while communicating with both senior developers and customers,
               all while proudly producing quality code and customer satisfaction.</p>
               </div>
-            </div>
-
-            <div className="banner-text">
-              <h2>Critic Reviews</h2>
+              <h2 style={{borderTop: '3px solid'}}>Critic Reviews</h2>
               <Fade left cascade duration={1000} delay={500}>
                 <div class="stars">
                   <span class="star on"></span>
