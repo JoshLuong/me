@@ -15,7 +15,7 @@ class App extends Component {
     function renderTitle(){
       var selectorId = document.getElementById('landing-title');
       selectorId.innerHTML =
-        '<div className="banner-text"><h1><div class=""><span class="animation-entry"  style="display: inline; opacity: 1;color: #dfe8ec;">Full Stack</span></div>Developer.</h1></div>';
+        '<div className="banner-text"><h1><div class=""><span class="animation-entry"  style="display: inline; opacity: 1;color: #cfeefc;">Full Stack</span></div>Developer.</h1></div>';
       
     }
     return (
