@@ -55,10 +55,10 @@
   }
 }
 .dark-background{
-  background: #444E74;
+  background: #40496b;
 }
 strong{
-  color: #8CA2DD;
+  color: #b1c0e9;
 }
 /* Critic Reviews */
 .aboutme .critic-reviews p {
@@ -79,6 +79,15 @@ strong{
 }
 
 /* Resume */
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-left:0.5em;
+  margin-right:0.5em;
+  display: inline-block;
+}
 .resume-personal-info{
   text-align: center;
 
@@ -149,7 +158,6 @@ strong{
 .list-content {
   margin: 0;
 }
-
 
 /* home page */
 

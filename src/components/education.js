@@ -11,7 +11,7 @@ class Education extends Component {
           <h4 style={{ marginTop: '0px' }}>{this.props.schoolName}</h4>
           <p style={{ color: '#d2dbe5' }}>{this.props.startYear} - Expected {this.props.endYear}</p>
           <p>{this.props.schoolDescription}</p>
-          <p> <strong style={{ color: '#8CA2DD' }}>•	Current Cumulative GPA: 4.00 | 86%</strong></p>
+          <p> <strong>•	Current Cumulative GPA: 4.00 | 86%</strong></p>
         </Cell>
       </Grid>
     )

@@ -87,7 +87,7 @@ class Landing extends Component {
                   <Typing.Backspace count={8} speed={30} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend </span>
                   <Typing.Backspace count={9} speed={30}/>
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Full Stack </span>
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Full Stack </span>
 
                 </Typing>
                 Developer.

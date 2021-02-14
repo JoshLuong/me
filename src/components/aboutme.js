@@ -13,7 +13,7 @@ class About extends Component {
               <h2>
                 <i className="fas fa-address-card" aria-hidden="true" /> About Me
               </h2>
-              <div style={{ textAlign: 'left' }}>
+              <div style={{ textAlign: 'center' }}>
                 <p>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
                 I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)
               is baking/ cooking. I love exploring new recipes and cuisines. Talk to me about the great outdoors!</p>

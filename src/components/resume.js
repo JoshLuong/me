@@ -99,6 +99,15 @@ class Resume extends Component {
                         </li>
                       </ul>}
                   />
+                  <div style={{ textAlign: 'center' }}>
+                    <p>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </p>
+
+                  </div>
                   <Experience
                     startEndYear={"June 2020"}
                     jobName="Store-2-Door: Group Programming Project"
@@ -112,6 +121,15 @@ class Resume extends Component {
                 </div>
               </Fade>
               <Fade>
+                <div style={{ textAlign: 'center' }}>
+                  <p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </p>
+
+                </div>
                 <Experience
                   startEndYear={"Feb 2020"}
                   jobName="Meal-Print, a carbon footprint calculator for food: SAP Hackathon"
@@ -131,6 +149,15 @@ class Resume extends Component {
               </Fade>
               <Fade>
                 <div>
+                  <div style={{ textAlign: 'center' }}>
+                    <p>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </p>
+
+                  </div>
                   <Experience
                     startEndYear={"Feb 2020 | May 2019 "}
                     jobName="Multilevel Snake Game: React Programming Project"
@@ -139,6 +166,15 @@ class Resume extends Component {
                       <li><p>Updated the high scores for both levels after every game using <strong>localStorage</strong></p></li>
                       <li><p>Redesigned the game to use <strong>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p></li> </ul>}
                   />
+                  <div style={{ textAlign: 'center' }}>
+                    <p>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </p>
+
+                  </div>
                   <Experience
                     startEndYear={"May 2019"}
                     jobName="Clinic Bookings: Java Programming Project"
@@ -149,8 +185,9 @@ class Resume extends Component {
                   />
                 </div>
               </Fade>
-
-              <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>View Resume</a>
+              <Cell col={12} style={{ textAlign: 'center' }}>
+                <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>View Resume</a>
+              </Cell>
               <p style={{ padding: '1em' }}></p>
             </div>
           </Cell>
