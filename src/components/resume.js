@@ -3,7 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import avatar from '../img/thumbnail_image.png'
-import Bounce from 'react-reveal/Bounce'
+import Fade from 'react-reveal/Fade';
 
 
 class Resume extends Component {
@@ -74,71 +74,81 @@ class Resume extends Component {
             <div className="resume-right-col" style={{ marginBottom: '3em' }}>
               <hr class="style13"></hr>
               <h2 style={{ paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-file-code" aria-hidden="true" style={{ color: 'black' }} /> Projects</h2>
-              <Experience
-                startYear={"Jan 2021"}
-                endYear={"Present"}
-                jobName="UBC Courses Data Visualization: Group Programming Project"
-                jobDescription={
-                  <ul>
-                    <li>
-                      <p>Streamlining UBC course data visualization for <strong>10,000+ </strong>data entries by developing a full stack application using JSON
+              <Fade big>
+                <div>
+                  <Experience
+                    startYear={"Jan 2021"}
+                    endYear={"Present"}
+                    jobName="UBC Courses Data Visualization: Group Programming Project"
+                    jobDescription={
+                      <ul>
+                        <li>
+                          <p>Streamlining UBC course data visualization for <strong>10,000+ </strong>data entries by developing a full stack application using JSON
                     parsing, <strong>TypeScript</strong>, and <strong>NodeJS</strong>
-                      </p>
-                    </li>
-                    <li>
-                      <p>Deploying a <strong>scalable</strong>, <strong>asynchronous</strong> query engine using Promises to customize searches to achieve efficient user
+                          </p>
+                        </li>
+                        <li>
+                          <p>Deploying a <strong>scalable</strong>, <strong>asynchronous</strong> query engine using Promises to customize searches to achieve efficient user
                     customizable functionality
                     </p>
-                    </li>
-                    <li>
-                      <p>Prioritizing the best coding practices via <strong>test-driven development</strong> (100+ black-box/ white-box tests) and continuous
+                        </li>
+                        <li>
+                          <p>Prioritizing the best coding practices via <strong>test-driven development</strong> (100+ black-box/ white-box tests) and continuous
                     integration/ agile methodology via the <strong>Mocha.js</strong> testing framework and <strong>Git</strong> version control, as well as regular regression testing
                     </p>
-                    </li>
-                  </ul>}
-              />
-              <Experience
-                startEndYear={"June 2020"}
-                jobName="Store-2-Door: Group Programming Project"
-                jobDescription={
-                  <ul>
-                    <li><p>Developed a <strong>full stack application</strong> aimed towards immunocompromised individuals during the <strong>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p></li>
-                    <li> <p>Contributed to seamless, modern UI using <strong>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong>Node.js</strong> matches two users together to fulfil the delivery service </p></li>
-                    <li><p>Created efficient <strong>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p></li>
-                  </ul>}
-              />
-              <Experience
-                startEndYear={"Feb 2020"}
-                jobName="Meal-Print, a carbon footprint calculator for food: SAP Hackathon"
-                jobDescription={
-                  <ul>
-                    <li>
-                      <p>Designed an Android application to integrate <strong>Firebase Machine Learning</strong> cloud-based APIs to recognize text from menus or
+                        </li>
+                      </ul>}
+                  />
+                  <Experience
+                    startEndYear={"June 2020"}
+                    jobName="Store-2-Door: Group Programming Project"
+                    jobDescription={
+                      <ul>
+                        <li><p>Developed a <strong>full stack application</strong> aimed towards immunocompromised individuals during the <strong>COVID-19</strong> pandemic by creating a non-profit essential items delivery service</p></li>
+                        <li> <p>Contributed to seamless, modern UI using <strong>React</strong> for both types of users: Transporters and Receivers, where back-end implementation in <strong>Node.js</strong> matches two users together to fulfil the delivery service </p></li>
+                        <li><p>Created efficient <strong>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p></li>
+                      </ul>}
+                  />
+                </div>
+              </Fade>
+              <Fade>
+                <Experience
+                  startEndYear={"Feb 2020"}
+                  jobName="Meal-Print, a carbon footprint calculator for food: SAP Hackathon"
+                  jobDescription={
+                    <ul>
+                      <li>
+                        <p>Designed an Android application to integrate <strong>Firebase Machine Learning</strong> cloud-based APIs to recognize text from menus or
                       food receipt images, which are then ranked on the carbon footprint impacts
                       </p>
-                    </li>
-                    <li>
-                      <p>Calculations allow users to avoid food items with a large carbon impact and gamification points
+                      </li>
+                      <li>
+                        <p>Calculations allow users to avoid food items with a large carbon impact and gamification points
                       </p>
-                    </li>
-                  </ul>}
-              />
-              <Experience
-                startEndYear={"Feb 2020 | May 2019 "}
-                jobName="Multilevel Snake Game: React Programming Project"
-                jobDescription={<ul><li><p>Developed a single player snake game using vanilla <strong>JavaScript, HTML, and CSS </strong>while learning the language</p></li>
-                  <li><p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p></li>
-                  <li><p>Updated the high scores for both levels after every game using <strong>localStorage</strong></p></li>
-                  <li><p>Redesigned the game to use <strong>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p></li> </ul>}
-              />
-              <Experience
-                startEndYear={"May 2019"}
-                jobName="Clinic Bookings: Java Programming Project"
-                jobDescription={<ul><li><p>Designed a <strong>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p></li>
-                  <li><p>Implemented a fixed scheduling rate that uses the <strong>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p></li>
-                  <li><p>Constructed a database in <strong>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p></li>
-                  <li><p>Implemented a GUI using JavaFX </p></li> </ul>}
-              />
+                      </li>
+                    </ul>}
+                />
+              </Fade>
+              <Fade>
+                <div>
+                  <Experience
+                    startEndYear={"Feb 2020 | May 2019 "}
+                    jobName="Multilevel Snake Game: React Programming Project"
+                    jobDescription={<ul><li><p>Developed a single player snake game using vanilla <strong>JavaScript, HTML, and CSS </strong>while learning the language</p></li>
+                      <li><p>Incorporated a welcome page, allowing the user to select the level of difficulty: easy (no extra obstacle), or hard (“bad apple” with random movement- if eaten, the player loses)</p></li>
+                      <li><p>Updated the high scores for both levels after every game using <strong>localStorage</strong></p></li>
+                      <li><p>Redesigned the game to use <strong>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p></li> </ul>}
+                  />
+                  <Experience
+                    startEndYear={"May 2019"}
+                    jobName="Clinic Bookings: Java Programming Project"
+                    jobDescription={<ul><li><p>Designed a <strong>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p></li>
+                      <li><p>Implemented a fixed scheduling rate that uses the <strong>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p></li>
+                      <li><p>Constructed a database in <strong>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p></li>
+                      <li><p>Implemented a GUI using JavaFX </p></li> </ul>}
+                  />
+                </div>
+              </Fade>
 
               <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>View Resume</a>
               <p style={{ padding: '1em' }}></p>
