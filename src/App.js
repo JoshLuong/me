@@ -18,7 +18,7 @@ class App extends Component {
             className="header-color"
             title={
               <div>
-                <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#landingpage">
+                <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#home">
 
                   josh luong
 
