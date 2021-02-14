@@ -5,11 +5,11 @@ class Education extends Component {
   render() {
     return (
       <Grid>
-        <Cell col={4}>
-          <p>{this.props.startYear} - Expected {this.props.endYear}</p>
+        <Cell col={2} tablet={0} cell={0}>
         </Cell>
-        <Cell col={8}>
+        <Cell col={8} tablet={12} cell={12}>
           <h4 style={{ marginTop: '0px' }}>{this.props.schoolName}</h4>
+          <p style={{ color: '#d2dbe5' }}>{this.props.startYear} - Expected {this.props.endYear}</p>
           <p>{this.props.schoolDescription}</p>
           <p> <strong style={{ color: '#8CA2DD' }}>•	Current Cumulative GPA: 4.00 | 86%</strong></p>
         </Cell>
