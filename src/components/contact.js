@@ -8,19 +8,20 @@ class Contact extends Component {
   render() {
     return (
       <div id='contact' style={{ position: 'relative' }}>
-        <Footer className='header-color' size="mini">
+        <Footer style ={{padding:'15px 15px'}}className='header-color' size="mini">
+          <div style={{margin:'auto'}}>
           <FooterSection type="middle">
-            <FooterLinkList style={{ paddingTop: '1 em', color: '#323232', fontSize: '1.2em' }}>
-              <a target="_blank" rel="noopener noreferrer" aria-hidden="true" href="https://www.linkedin.com/in/joshua-luong/"> LinkedIn</a>
-              <a target="_blank" rel="noopener noreferrer" aria-hidden="true" href="tel:7782883221"> (778) 288-3221</a>
-              <a target="_blank" rel="noopener noreferrer" aria-hidden="true" href="mailto:joshualuong@hotmail.com"> Email</a>
+            <FooterLinkList style={{ paddingTop: '1 em', color: '#323232', fontSize: '1.2em', marginBottom: '0px' }}>
+              <Grid>
+              <Cell col ={4} tablet={12} cell ={12}><a target="_blank" rel="noopener noreferrer" aria-hidden="true" href="https://www.linkedin.com/in/joshua-luong/"> LinkedIn</a></Cell>
+              
+              <Cell col ={4}  tablet={12}cell ={12}><a target="_blank" rel="noopener noreferrer" aria-hidden="true" display="inline" href="mailto:joshualuong@hotmail.com"> joshualuong@hotmail.com</a></Cell>
+              <Cell col ={4} tablet={12}cell ={12}> <a target="_blank" rel="noopener noreferrer" aria-hidden="true" href="tel:7782883221"> (778) 288-3221</a></Cell>
+              <Cell col={12}><p style={{color:'grey'}}>© 2021 Joshua Luong</p></Cell>
+              </Grid>
             </FooterLinkList>
           </FooterSection>
-          <FooterSection type="right">
-            <FooterLinkList style={{ paddingTop: '1 em', color: '#323232', fontSize: '1.2em' }}>
-              <p>© 2021 Joshua Luong</p>
-            </FooterLinkList>
-          </FooterSection>
+          </div>
         </Footer>
       </div>
     )

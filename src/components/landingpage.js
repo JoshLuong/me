@@ -52,8 +52,8 @@ class Landing extends Component {
   Slideshow() {
     if (window.innerWidth < 750) {
       return (
-        <div id='home' className="image-container avatar-img">
-          <img src={avatar2} />
+        <div id='home' className="image-container avatar-img" style={{height:'250px'}}>
+          <img src={avatar4} height="300"width="300" />
         </div>
       )
     }
@@ -110,7 +110,7 @@ class Landing extends Component {
             </div>
 
 
-            <div className="banner-text" >
+            <div className="banner-text" style={{marginTop:'0px !important'}}>
               <h1 id="landing-title">
                 <Typing>
                 <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Backend </span>
