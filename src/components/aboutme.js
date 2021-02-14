@@ -34,7 +34,7 @@ class About extends Component {
             <Cell col={12} className='dark-background' style={{ margin: 0, width: '100%' }}>
 
               <div className='critic-reviews'>
-                <h2>Critic Reviews</h2>
+                <h2><i className="fas fa-film" aria-hidden="true" /> Critic Reviews</h2>
                 <Fade left cascade duration={1000} delay={500}>
                   <div class="stars">
                     <span class="star on"></span>
