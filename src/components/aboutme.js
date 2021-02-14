@@ -49,7 +49,7 @@ class About extends Component {
                 He works very well with other interns, as well as senior team members.
                 He has demonstrated in his last four months of work terms great team work by effectively
                 listening, and sharing or conveying ideas.
-              The volume of work produced along with speed, accuracy has exceeded expectations."<p>  -  A Previous Employer</p></p>
+              The volume of work produced along with speed, accuracy has exceeded expectations."<p style={{fontFamily: 'PT Serif'}}>  -  A Previous Employer</p></p>
                 <br></br>
                 <Fade left cascade duration={1000} delay={500}>
                   <div class="stars">
@@ -62,7 +62,7 @@ class About extends Component {
 
                   </div>
                 </Fade>
-                <p>"A heart felt protagonist. Must see."<p>  -  The Times</p></p>
+                <p>"A heart felt protagonist. Must see."<p style={{fontFamily: 'PT Serif'}}>  -  The Times</p></p>
                 <br></br>
                 <Fade left cascade duration={1000} delay={500}>
                   <div class="stars">
@@ -74,7 +74,7 @@ class About extends Component {
 
                   </div>
                 </Fade>
-                <p>"Shockingly hard working."<p>  -  The Guardian</p></p>
+                <p>"Shockingly hard working."<p style={{fontFamily: 'PT Serif'}}>  -  The Guardian</p></p>
               </div>
               <br></br>
 
