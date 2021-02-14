@@ -10,6 +10,13 @@ class App extends Component {
     function style() {
       var selectorId = document.querySelector('.mdl-layout');
       selectorId.MaterialLayout.toggleDrawer();
+      renderTitle();
+    }
+    function renderTitle(){
+      var selectorId = document.getElementById('landing-title');
+      selectorId.innerHTML =
+        '<div className="banner-text"><h1><div class=""><span class="animation-entry"  style="display: inline; opacity: 1;color: #dfe8ec;">Full Stack</span></div>Developer.</h1></div>';
+      
     }
     return (
       <div className="demo-big-content">
@@ -18,7 +25,7 @@ class App extends Component {
             className="header-color"
             title={
               <div>
-                <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#home">
+                <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#home" onClick={() => renderTitle()}>
 
                   josh luong
 
@@ -33,10 +40,10 @@ class App extends Component {
 
             scroll>
             <Navigation>
-              <Link to={process.env.PUBLIC_URL + "/#home"}>Home</Link>
-              <Link to={process.env.PUBLIC_URL + "/#resume"}>Resume</Link>
-              <Link to={process.env.PUBLIC_URL + "/#aboutme"}>About</Link>
-              <Link to={process.env.PUBLIC_URL + "/#contact"}>Contact</Link>
+              <Link to={process.env.PUBLIC_URL + "/#home"}onClick={() => renderTitle()}>Home</Link>
+              <Link to={process.env.PUBLIC_URL + "/#resume"}onClick={() => renderTitle()}>Resume</Link>
+              <Link to={process.env.PUBLIC_URL + "/#aboutme"}onClick={() => renderTitle()}>About</Link>
+              <Link to={process.env.PUBLIC_URL + "/#contact"}onClick={() => renderTitle()}>Contact</Link>
             </Navigation>
           </Header>
           <Drawer id='burger' title={<Link onClick={() => style()} style={{textDecoration: 'none', color: 'black' }} to="/">josh</Link>}>
