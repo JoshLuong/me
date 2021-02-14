@@ -26,10 +26,21 @@
 
 .header-color {
     background: #E8ECF8; /* fallback for old browsers */
-    opacity: 0.8;
+    opacity: 0.95;
     font-family: 'Roboto';
     background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mdl-logo{
+  color: #323232 !important;
+}
+.critic-reviews p{
+  font-family: 'Newsreader', serif;
+  font-size: 1.6em !important;
+  
+}
+.critic-reviews{
+  color:white !important;
 }
 .resume-personal-info{
   text-align: center;
@@ -47,8 +58,8 @@
 }
 @media screen and (max-width: 1024px){
   .mdl-layout .mdl-layout__drawer-button i {
-    color: white !important;
-    line-height: 2 !important;
+    color: #E8ECF8 !important;
+    margin-top: 0.5em;
     font-size: 30px !important;
     left: auto;
     right: 1  !important;
@@ -58,7 +69,6 @@
 
 
 .landing-grid {
-  background-image: url('./img/blue_bgnd.jpg');
   text-align: center;
   position: fixed;
   font-family: 'Roboto';
@@ -71,6 +81,18 @@
   overflow-x: hidden;
 }
 
+.background-image{
+  background-image: url('./img/blue_bgnd.jpg');
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 750px){
+
+  .background-image{
+    height: 90vh;
+  }
+}
 .projects-grid {
   display: flex;
 }
@@ -85,11 +107,11 @@
 }
 
 .resume-right-col p {
-    font-size: 15px;
+    font-size: 17px;
 }
 #landing-title {
-    font-size: 4em;
-    color: #8CA2DD;
+    font-size: 4.5em;
+    color: white;
     text-align: center;
     margin-bottom: 0;
 }
@@ -168,13 +190,19 @@ font-family: 'Roboto';
 }
 
 .banner-text {
-    background-color: white;
-    color: #323232;
-    opacity: .95;
+    color: white;
     margin: auto;
     margin-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
+}
+.aboutme {
+  color: black;
+  margin: auto;
+}
+.aboutme p{
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .mdl-textfield {
@@ -188,10 +216,6 @@ font-family: 'Roboto';
 }
 }
 
-
-#about-me-text{
-  font-size: 44px;
-}
 #no-margin {
     margin: 0px  ! Important;
 }
@@ -222,14 +246,36 @@ font-family: 'Roboto';
 }
 
 .banner-text p {
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 1.6em;
     padding-top: 0em;
     padding-left: 0.85em;
     padding-right: 0.85em;
 }
-
+.aboutme p {
+  color: black;
+  font-size: 1.3em;
+  padding-top: 0em;
+}
+.critic-reviews p {
+  font-size: 1.3em;
+  padding-top: 0em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.aboutme h2 {
+  font-size: 55px;
+  padding-top: 0.3em;
+  font-weight: bold;
+  color: #323232;
+}
+.critic-reviews h2 {
+  font-size: 55px;
+  padding-top: 0.3em;
+  font-weight: bold;
+}
 #bottom_p {
+  padding-top: 1em;
   padding-bottom: 2em;
 }
 
@@ -271,3 +317,33 @@ font-family: 'Roboto';
     width: 10px;
     overflow: hidden;
 }
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+  box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25);
+	background-image: linear-gradient(to right, transparent, #444E74, transparent);
+}
+
+.resume-right-col .div-transparent:before{
+  background-image: linear-gradient(to right, transparent, white, transparent);
+}
+hr.style13 {
+	height: 8px;
+	border: 0;
+  width: 100%;
+	box-shadow: 0 8px 8px -8px #8c8b8b inset;
+}
+

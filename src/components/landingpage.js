@@ -11,12 +11,20 @@ import Typing from 'react-typing-animation';
 import Contact from './contact';
 import AboutMe from './aboutme';
 import Resume from './resume';
+
 // using MDL similar to bootsrap
 // inline style
 //5ki
 
 class Landing extends Component {
   Slideshow() {
+    if (window.innerWidth < 750) {
+      return (
+        <div id='home' className="image-container avatar-img">
+          <img src={avatar} />
+        </div>
+      )
+    }
     const properties = {
       duration: 3000,
       transitionDuration: 1000,
@@ -29,7 +37,7 @@ class Landing extends Component {
       }
     }
     return (
-      <div className="slide-container">
+      <div id='home' className="slide-container">
         <Slide {...properties}>
           <div className="each-slide">
             <div className="image-container avatar-img">
@@ -62,8 +70,8 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div style={{ width: '100%', margin: 'auto' }} className = "landing-grid">
-        <Grid id="no-margin" className="mdl-grid--no-spacing">
+      <div style={{ width: '100%', margin: 'auto' }} className="landing-grid">
+        <Grid id="no-margin" className="mdl-grid--no-spacing background-image">
           <Cell className="mdl-grid--no-spacing" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
             <div>
               {this.Slideshow()}
@@ -72,28 +80,49 @@ class Landing extends Component {
 
             <div className="banner-text" >
               <h1 id="landing-title"><Typing><span>Software Developer</span></Typing></h1>
-              <h5>Front-end | Back-end</h5>
+              <h5 style={{ fontSize: '2em' }}>Front-end | Back-end</h5>
 
-
-
-              <p>HTML5/ CSS3 | JavaScript (ES6) | ReactJS | NodeJS </p>
-              <p id="bottom_p">Java | C++ | MySQL | PostgreSQL</p>
-              <div style ={{borderTop: '3px solid', width: '90%', margin: 'auto'}}>
-              <Bounce duration={window.innerWidth > 400 ? '700' : '0'} delay={window.innerWidth > 400 ? '1500' : '0'}>
-                <br />
-                <p style={{ fontSize: '1.5em', marginTop: '2em', marginBottom: '2em', padding: '10' }}>
-                  Currently Seeking <strong style={{ color: '#8CA2DD' }}>2021</strong> Internships !</p>
-                <br />
-              </Bounce>
+              <div style={{ paddingTop: '1.5em', display: 'inline' }}>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-html5" aria-hidden="true" /> HTML5
+                </p>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-css3" aria-hidden="true" /> CSS3
+                </p>
+                <div style={{ paddingTop: '1.5em', display: 'inline' }}>
+                  <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                    <i className="fab fa-js" aria-hidden="true" /> JavaScript
+                </p>
+                </div>
               </div>
+              <div style={{ marginTop: '1.5em' }}>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-react" aria-hidden="true" /> ReactJS
+                </p>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-node-js" aria-hidden="true" /> NodeJS
+                </p>
+              </div>
+              <div style={{ paddingTop: '1em', paddingBottom: '2em' }}>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-java fa-5x" aria-hidden="true" /> Java
+                </p>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-cuttlefish" aria-hidden="true" />++
+                </p>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fas fa-database" aria-hidden="true" /> MySQL
+                </p>
+              </div>
+
             </div>
             <br />
           </Cell>
           <p></p>
         </Grid>
-        <Resume/>
-        <AboutMe/>
-        <Contact/>
+        <Resume />
+        <AboutMe />
+        <Contact />
       </div>
     )
   }
