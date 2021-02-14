@@ -5,14 +5,13 @@ import Fade from 'react-reveal/Fade';
 class About extends Component {
   render() {
     return (
-      <div style={{ width: '100%', margin: 'auto' }}>
-        <Grid className="landing-grid mdl-grid--no-spacing">
+      <div id="aboutme" style={{ width: '100%', margin: 'auto', backgroundColor: '#f9fafb' }}>
+        <Grid className=" mdl-grid--no-spacing">
           <Cell col={12}>
 
-            <div className="banner-text" id="about-me-text">
+            <div className="aboutme" id="about-me-text">
               <h2>
-                <i className="fas fa-address-card" aria-hidden="true" />
-                 About Me
+                <i className="fas fa-address-card" aria-hidden="true" /> About Me
               </h2>
               <div style={{ textAlign: 'left' }}>
                 <p>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
@@ -32,53 +31,56 @@ class About extends Component {
               all while proudly producing quality code and customer satisfaction.</p>
               </div>
             </div>
+            <Cell col={12} style={{ background: '#444E74', margin: 0, width: '100%' }}>
 
-            <div className="banner-text">
-              <h2>Critic Reviews</h2>
-              <Fade left cascade duration={1000} delay={500}>
-                <div class="stars">
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
+              <div className='critic-reviews'>
+                <h2>Critic Reviews</h2>
+                <Fade left cascade duration={1000} delay={500}>
+                  <div class="stars">
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
 
-                </div>
-              </Fade>
-              <p>"Joshua works very hard.
-              He works very well with other interns, as well as senior team members.
-              He has demonstrated in his last four months of work terms great team work by effectively
-              listening, and sharing or conveying ideas.
+                  </div>
+                </Fade>
+                <p>"Joshua works very hard.
+                He works very well with other interns, as well as senior team members.
+                He has demonstrated in his last four months of work terms great team work by effectively
+                listening, and sharing or conveying ideas.
               The volume of work produced along with speed, accuracy has exceeded expectations."<p>  -  A Previous Employer</p></p>
-              <br></br>
-              <Fade left cascade duration={1000} delay={500}>
-                <div class="stars">
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star before"></span>
+                <br></br>
+                <Fade left cascade duration={1000} delay={500}>
+                  <div class="stars">
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star before"></span>
 
 
-                </div>
-              </Fade>
-              <p>"A heart felt protagonist. Must see."<p>  -  The Times</p></p>
-              <br></br>
-              <Fade left cascade duration={1000} delay={500}>
-                <div class="stars">
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
-                  <span class="star on"></span>
+                  </div>
+                </Fade>
+                <p>"A heart felt protagonist. Must see."<p>  -  The Times</p></p>
+                <br></br>
+                <Fade left cascade duration={1000} delay={500}>
+                  <div class="stars">
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
+                    <span class="star on"></span>
 
-                </div>
-              </Fade>
-              <p>"Shockingly hard working."<p>  -  The Guardian</p></p>
+                  </div>
+                </Fade>
+                <p>"Shockingly hard working."<p>  -  The Guardian</p></p>
+              </div>
               <br></br>
-            </div>
-            <br></br>
-          
+
+            </Cell>
+
+
           </Cell>
         </Grid>
       </div>
