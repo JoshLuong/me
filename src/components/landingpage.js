@@ -81,12 +81,12 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1 id="landing-title">
-                <Typing speed={20}>
+                <Typing speed={40}>
                   <Typing.Delay ms={550} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend </span>
-                  <Typing.Backspace count={8} speed={10} />
+                  <Typing.Backspace count={8} speed={30} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend </span>
-                  <Typing.Backspace count={9} speed={10}/>
+                  <Typing.Backspace count={9} speed={30}/>
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Full Stack </span>
 
                 </Typing>
