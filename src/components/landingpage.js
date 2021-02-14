@@ -17,6 +17,38 @@ import Resume from './resume';
 //5ki
 
 class Landing extends Component {
+  componentDidMount() {
+    this.Animation();
+  }
+
+  Animation() {
+    const delay = (ms) => {
+      const startPoint = new Date().getTime()
+      while (new Date().getTime() - startPoint <= ms) {/* wait */ }
+    }
+    console.log("here")
+    let entries = document.getElementsByClassName('animation-entry');
+    console.log(entries)
+    for (let i = 0; i < entries.length; i++) {
+      setTimeout(function () {
+        console.log(entries[i].style.opacity + "opac")
+        if (i > 0) {
+          entries[i - 1].style.transitionDuration = '0.8s'
+          entries[i - 1].style.opacity = 0;
+          entries[i - 1].style.display = 'none'
+          delay(1000)
+        }
+        if (i < entries.length) {
+          delay(1000)
+          entries[i].style.transitionDuration = '0.8s'
+          entries[i].style.opacity = 1;
+          entries[i].style.display = 'inline';
+
+        }
+
+      }, (i + 1) * 2000);
+    }
+  }
   Slideshow() {
     if (window.innerWidth < 750) {
       return (
@@ -71,29 +103,38 @@ class Landing extends Component {
   render() {
     return (
       <div style={{ width: '100%', margin: 'auto' }} className="landing-grid">
-        <Grid id="no-margin" className="mdl-grid--no-spacing background-image">
-          <Cell className="mdl-grid--no-spacing" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
+        <Grid id="no-margin" className="mdl-grid--no-spacing">
+          <Cell className="mdl-grid--no-spacing background-image" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
             <div>
               {this.Slideshow()}
             </div>
 
 
             <div className="banner-text" >
-              <h1 id="landing-title"><Typing><span>Software Developer</span></Typing></h1>
-              <h5 style={{ fontSize: '2em' }}>Front-end | Back-end</h5>
-
-              <div style={{ paddingTop: '1.5em', display: 'inline' }}>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-html5" aria-hidden="true" /> HTML5
-                </p>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-css3" aria-hidden="true" /> CSS3
-                </p>
-                <div style={{ paddingTop: '1.5em'}}>
+              <h1 id="landing-title">
+                <Typing>
+                <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Backend </span>
+                  <Typing.Backspace count={8} />
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Frontend </span>
+                  <Typing.Backspace count={9} />
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Full Stack </span>
+                
+                </Typing>
+                Developer.
+              </h1>
+              <h5 style={{ fontSize: '2em' }}></h5>
+              <div style={{ paddingTop: '1.5em', paddingBottom: '1.5em' }}>
                   <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
                     <i className="fab fa-js" aria-hidden="true" /> JavaScript
                 </p>
                 </div>
+              <div style={{ paddingTop: '1.5em', display: 'inline' }}>
+                <p style={{  paddingTop: '1.5em',display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-html5" aria-hidden="true" /> HTML5
+                </p>
+                <p style={{  paddingTop: '1.5em',display: 'inline', whiteSpace: 'nowrap' }}>
+                  <i className="fab fa-css3" aria-hidden="true" /> CSS3
+                </p>
               </div>
               <div style={{ marginTop: '1.5em' }}>
                 <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
