@@ -113,11 +113,11 @@ class Landing extends Component {
             <div className="banner-text" >
               <h1 id="landing-title">
                 <Typing>
-                <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Backend </span>
+                <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Backend </span>
                   <Typing.Backspace count={8} />
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Frontend </span>
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Frontend </span>
                   <Typing.Backspace count={9} />
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Full Stack </span>
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Full Stack </span>
                 
                 </Typing>
                 Developer.
