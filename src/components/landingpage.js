@@ -17,44 +17,12 @@ import Resume from './resume';
 //5ki
 
 class Landing extends Component {
-  componentDidMount() {
-    this.Animation();
-  }
 
-  Animation() {
-    const delay = (ms) => {
-      const startPoint = new Date().getTime()
-      while (new Date().getTime() - startPoint <= ms) {/* wait */ }
-    }
-    console.log("here")
-    let entries = document.getElementsByClassName('animation-entry');
-    console.log(entries)
-    delay(500)
-    for (let i = 0; i < entries.length; i++) {
-      setTimeout(function () {
-        console.log(entries[i].style.opacity + "opac")
-        if (i > 0) {
-          entries[i - 1].style.transitionDuration = '0.8s'
-          entries[i - 1].style.opacity = 0;
-          entries[i - 1].style.display = 'none'
-          delay(1000)
-        }
-        if (i < entries.length) {
-          delay(1000)
-          entries[i].style.transitionDuration = '0.8s'
-          entries[i].style.opacity = 1;
-          entries[i].style.display = 'inline';
-
-        }
-
-      }, (i + 1) * 2000);
-    }
-  }
   Slideshow() {
     if (window.innerWidth < 750) {
       return (
-        <div id='home' className="image-container avatar-img" style={{height:'250px'}}>
-          <img src={avatar4} height="300"width="300" />
+        <div id='home' className="image-container avatar-img" style={{ height: '250px' }}>
+          <img src={avatar4} height="300" width="300" />
         </div>
       )
     }
@@ -111,53 +79,54 @@ class Landing extends Component {
             </div>
 
 
-            <div className="banner-text" style={{marginTop:'0px !important'}}>
+            <div className="banner-text">
               <h1 id="landing-title">
-                <Typing>
-                <Typing.Delay ms={450} />
-                <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Backend </span>
-                  <Typing.Backspace count={8} />
+                <Typing speed={40}>
+                  <Typing.Delay ms={500} />
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Backend </span>
+                  <Typing.Backspace count={8} speed={20} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#bfd1d9', display: 'inline', opacity: 1 }}>Frontend </span>
-                  <Typing.Backspace count={9} />
+                  <Typing.Backspace count={9} speed={20}/>
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#dfe8ec', display: 'inline', opacity: 1 }}>Full Stack </span>
-                
+
                 </Typing>
                 Developer.
               </h1>
               <h5 style={{ fontSize: '2em' }}></h5>
-              <div style={{ paddingTop: '1.5em', paddingBottom: '1.5em' }}>
+              <div className='landing-page-skills'>
+                <div style={{ paddingTop: '1.5em', paddingBottom: '1.5em' }}>
                   <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
                     <i className="fab fa-js" aria-hidden="true" /> JavaScript
                 </p>
                 </div>
-              <div style={{ paddingTop: '1.5em', display: 'inline' }}>
-                <p style={{  paddingTop: '1.5em',display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-html5" aria-hidden="true" /> HTML5
+                <div style={{ paddingTop: '1.5em', display: 'inline' }}>
+                  <p>
+                    <i className="fab fa-html5" aria-hidden="true" /> HTML5
                 </p>
-                <p style={{  paddingTop: '1.5em',display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-css3" aria-hidden="true" /> CSS3
+                  <p>
+                    <i className="fab fa-css3" aria-hidden="true" /> CSS3
                 </p>
+                </div>
+                <div style={{ marginTop: '1.5em' }}>
+                  <p>
+                    <i className="fab fa-react" aria-hidden="true" /> ReactJS
+                </p>
+                  <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                    <i className="fab fa-node-js" aria-hidden="true" /> NodeJS
+                </p>
+                </div>
+                <div style={{ paddingTop: '1em', paddingBottom: '2em' }}>
+                  <p>
+                    <i className="fab fa-java fa-5x" aria-hidden="true" /> Java
+                </p>
+                  <p>
+                    <i className="fab fa-cuttlefish" aria-hidden="true" />++
+                </p>
+                  <p>
+                    <i className="fas fa-database" aria-hidden="true" /> MySQL
+                </p>
+                </div>
               </div>
-              <div style={{ marginTop: '1.5em' }}>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-react" aria-hidden="true" /> ReactJS
-                </p>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-node-js" aria-hidden="true" /> NodeJS
-                </p>
-              </div>
-              <div style={{ paddingTop: '1em', paddingBottom: '2em' }}>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-java fa-5x" aria-hidden="true" /> Java
-                </p>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fab fa-cuttlefish" aria-hidden="true" />++
-                </p>
-                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
-                  <i className="fas fa-database" aria-hidden="true" /> MySQL
-                </p>
-              </div>
-
             </div>
             <br />
           </Cell>

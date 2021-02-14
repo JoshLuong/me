@@ -18,13 +18,13 @@ class App extends Component {
             className="header-color"
             title={
               <div>
-                <Link style={{ fontFamily: 'Roboto', textDecoration: 'none', color: '#323232', fontSize: '2em', float: 'left' }} to="/#landingpage">
+                <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#landingpage">
 
                   josh luong
 
            </Link>
                 <div style={{ display: 'inline-block' }}>
-                  <Blink fontFamily='Roboto' textDecoration='none' color='black' fontSize='2em' text=' |'></Blink>
+                  <Blink fontFamily='Roboto' textDecoration='none' color='black' fontSize='1.5em' text=' |'></Blink>
                 </div>
               </div>
 
@@ -32,15 +32,15 @@ class App extends Component {
 
 
             scroll>
-            <Navigation style={{ fontFamily: 'Roboto' }}>
-              <Link style={{ color: 'black', fontSize: '1.3em' }} to={process.env.PUBLIC_URL + "/#home"}>Home</Link>
-              <Link style={{ color: 'black', fontSize: '1.3em' }} to={process.env.PUBLIC_URL + "/#resume"}>Resume</Link>
-              <Link style={{ color: 'black', fontSize: '1.3em' }} to={process.env.PUBLIC_URL + "/#aboutme"}>About</Link>
-              <Link style={{ color: 'black', fontSize: '1.3em' }} to={process.env.PUBLIC_URL + "/#contact"}>Contact</Link>
+            <Navigation>
+              <Link to={process.env.PUBLIC_URL + "/#home"}>Home</Link>
+              <Link to={process.env.PUBLIC_URL + "/#resume"}>Resume</Link>
+              <Link to={process.env.PUBLIC_URL + "/#aboutme"}>About</Link>
+              <Link to={process.env.PUBLIC_URL + "/#contact"}>Contact</Link>
             </Navigation>
           </Header>
-          <Drawer id='burger' title={<Link onClick={() => style()} style={{ fontFamily: 'Roboto', textDecoration: 'none', color: 'black' }} to="/">josh</Link>}>
-            <Navigation style={{ fontFamily: 'Roboto', color: 'black' }}>
+          <Drawer id='burger' title={<Link onClick={() => style()} style={{textDecoration: 'none', color: 'black' }} to="/">josh</Link>}>
+            <Navigation style={{ color: 'black' }}>
               <Link to={process.env.PUBLIC_URL + "/#home"} onClick={() => style()}>Home</Link>
               <Link to={process.env.PUBLIC_URL + "/#resume"} onClick={() => style()}>Resume</Link>
               <Link to={process.env.PUBLIC_URL + "/#aboutme"} onClick={() => style()}>About</Link>

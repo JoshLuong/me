@@ -5,11 +5,11 @@ import Fade from 'react-reveal/Fade';
 class About extends Component {
   render() {
     return (
-      <div id="aboutme" style={{ width: '100%', margin: 'auto', backgroundColor: '#f9fafb' }}>
+      <div id="aboutme" className="aboutme">
         <Grid className=" mdl-grid--no-spacing">
           <Cell col={12}>
 
-            <div className="aboutme" id="about-me-text">
+            <div id="about-me-text">
               <h2>
                 <i className="fas fa-address-card" aria-hidden="true" /> About Me
               </h2>
@@ -31,7 +31,7 @@ class About extends Component {
               all while proudly producing quality code and customer satisfaction.</p>
               </div>
             </div>
-            <Cell col={12} style={{ background: '#444E74', margin: 0, width: '100%' }}>
+            <Cell col={12} className='dark-background' style={{ margin: 0, width: '100%' }}>
 
               <div className='critic-reviews'>
                 <h2>Critic Reviews</h2>
@@ -49,7 +49,7 @@ class About extends Component {
                 He works very well with other interns, as well as senior team members.
                 He has demonstrated in his last four months of work terms great team work by effectively
                 listening, and sharing or conveying ideas.
-              The volume of work produced along with speed, accuracy has exceeded expectations."<p style={{fontFamily: 'PT Serif'}}>  -  A Previous Employer</p></p>
+              The volume of work produced along with speed, accuracy has exceeded expectations."<p className='critic-reviewer'>  -  A Previous Employer</p></p>
                 <br></br>
                 <Fade left cascade duration={1000} delay={500}>
                   <div class="stars">
@@ -62,7 +62,7 @@ class About extends Component {
 
                   </div>
                 </Fade>
-                <p>"A heart felt protagonist. Must see."<p style={{fontFamily: 'PT Serif'}}>  -  The Times</p></p>
+                <p>"A heart felt protagonist. Must see."<p className='critic-reviewer'>  -  The Times</p></p>
                 <br></br>
                 <Fade left cascade duration={1000} delay={500}>
                   <div class="stars">
@@ -74,13 +74,11 @@ class About extends Component {
 
                   </div>
                 </Fade>
-                <p>"Shockingly hard working."<p style={{fontFamily: 'PT Serif'}}>  -  The Guardian</p></p>
+                <p>"Shockingly hard working."<p className='critic-reviewer'>  -  The Guardian</p></p>
               </div>
               <br></br>
 
             </Cell>
-
-
           </Cell>
         </Grid>
       </div>

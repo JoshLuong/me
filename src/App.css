@@ -1,4 +1,4 @@
-
+/* Scroll Bar */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -20,27 +20,64 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
-    ::-webkit-scrollbar-thumb:window-inactive {
-        background: rgba(44,51,70, 0.8);
-    }
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(44,51,70, 0.8);
+}
 
-.header-color {
-    background: #E8ECF8; /* fallback for old browsers */
-    opacity: 0.95;
-    font-family: 'Roboto';
-    background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.landing-grid {
+  text-align: center;
+  position: fixed;
+  font-family: 'Roboto';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
-.mdl-logo{
-  color: #323232 !important;
+.mdl-layout__header-row .mdl-navigation__link{
+  color: black !important;
+  font-size: 1em;
 }
-.critic-reviews p{
-  font-size: 1.6em !important;
-  
+
+.background-image{
+  background-image: url('./img/blue_bgnd.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
 }
-.critic-reviews{
-  color:white !important;
+@media screen and (min-width: 750px){
+
+  .background-image{
+    min-height: 90vh;
+  }
 }
+.dark-background{
+  background: #444E74;
+}
+strong{
+  color: #8CA2DD;
+}
+/* Critic Reviews */
+.aboutme .critic-reviews p {
+  font-size: 1.3em;
+  padding-top: 0em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color:white;
+}
+.aboutme .critic-reviews h2 {
+  font-size: 55px;
+  padding-top: 0.7em;
+  font-weight: bold;
+  color:white;
+}
+.critic-reviewer {
+  font-family: 'PT Serif';
+}
+
+/* Resume */
 .resume-personal-info{
   text-align: center;
 
@@ -66,50 +103,29 @@
   }
 }
 
-
-.landing-grid {
-  text-align: center;
-  position: fixed;
-  font-family: 'Roboto';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.background-image{
-  background-image: url('./img/blue_bgnd.jpg');
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-}
-
-
-@media screen and (min-width: 750px){
-
-  .background-image{
-    min-height: 90vh;
-  }
-}
 .projects-grid {
   display: flex;
 }
 
 /* Resume Page css */
 .resume-right-col {
-    background: #444E74;
     color: white;
     text-align: left;
     padding-left: 2em;
     padding-right: 2em;
 }
-
 .resume-right-col p {
-    font-size: 17px;
+    font-size: 1.1em;
 }
+
+.avatar-resume-img {
+  padding-bottom:0em;
+  padding-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 #landing-title {
     font-size: 4em;
     color: white;
@@ -117,7 +133,7 @@
     margin-bottom: 0;
 }
 
-/* contact page css */
+/* Contact page */
 
 .contact-body {
   width: 100%;
@@ -129,55 +145,17 @@
   justify-content: center;
 }
 
-.contact-grid {
-    text-align: center;
-    opacity: 0.95;
-    background-color: white;
-    justify-content: center;
-    width: 80%;
-    color: #323232;
-    margin-bottom: 20px;
-    margin-top: 5em;
-    font-size: 20px;
-    font-family: Roboto;
-}
-
-.contact-div{
-  color:white;
-  margin-top: 10em;
-}
-
-
-.contact-grid p {
-font-family: 'Roboto';
-  color:white;
-  font-weight: bold;
-}
-
-.contact-grid hr {
-    color: #323232;
-    border-top: 3px solid black;
-    width: 80%;
-    margin: auto;
-}
-.contact-grid h4 {
-  color:white;
-  width: 50%;
-  margin: auto;
-}
-
-.contact-list i {
-  font-size: 66px;
-  color:white;
-}
-
 .list-content {
   margin: 0;
 }
 
 
-/* contact page css */
+/* home page */
 
+.landing-page-skills p{
+  display: inline;
+  white-space: nowrap;
+}
 .avatar-img {
   height: 350px;
   padding-top: 5em;
@@ -187,15 +165,6 @@ font-family: 'Roboto';
   padding-top: 2em;
 }
 }
-
-
-.avatar-resume-img {
-  padding-bottom:0em;
-  padding-top: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .banner-text {
     color: white;
     margin: auto;
@@ -203,37 +172,6 @@ font-family: 'Roboto';
     padding-left: 1em;
     padding-right: 1em;
 }
-.aboutme {
-  color: black;
-  margin: auto;
-}
-.aboutme p{
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.mdl-textfield {
-    margin: -20px 0;
-}
-
-@media (max-width: 479px){
-  .mdl-cell {
-    margin: 0px;
-    width: calc(100% - 16px);
-}
-}
-
-#no-margin {
-    margin: 0px  ! Important;
-}
-
-@media (max-width: 479px){
-  #no-margin {
-    margin: 0px  ! Important;
-}
-  
-}
-
 .banner-text h1 {
   font-weight: bold;
   color: white;
@@ -259,16 +197,31 @@ font-family: 'Roboto';
     padding-left: 0.85em;
     padding-right: 0.85em;
 }
+.header-color {
+  background: #E8ECF8; /* fallback for old browsers */
+  opacity: 0.95;
+  font-family: 'Roboto';
+  background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mdl-logo{
+color: #323232 !important;
+}
+/* About me page */
+.aboutme {
+  color: black;
+  margin: auto;
+  width: 100%;
+  background-color: #f9fafb;
+}
+.aboutme p{
+  padding-left: 2em;
+  padding-right: 2em;
+}
 .aboutme p {
   color: black;
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding-top: 0em;
-}
-.critic-reviews p {
-  font-size: 1.3em;
-  padding-top: 0em;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 .aboutme h2 {
   font-size: 55px;
@@ -276,31 +229,33 @@ font-family: 'Roboto';
   font-weight: bold;
   color: #323232;
 }
-.critic-reviews h2 {
-  font-size: 55px;
-  padding-top: 0.3em;
-  font-weight: bold;
+
+.mdl-textfield {
+    margin: -20px 0;
 }
+
+@media (max-width: 479px){
+  .mdl-cell {
+    margin: 0px;
+    width: calc(100% - 16px);
+}
+}
+
+#no-margin {
+    margin: 0px  ! Important;
+}
+
+@media (max-width: 479px){
+  #no-margin {
+    margin: 0px  ! Important;
+}
+  
+}
+
 #bottom_p {
   padding-top: 1em;
   padding-bottom: 2em;
 }
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  font-size: 60em;
-  color: white;
-  margin: auto;
-}
-
-.social-links i {
-  color: white;
-  font-size: 5em;
-  padding: 8px;
-}
-
 .star {
     font-size: x-large;
     width: 50px;
@@ -344,9 +299,7 @@ font-family: 'Roboto';
 	background-image: linear-gradient(to right, transparent, #444E74, transparent);
 }
 
-.resume-right-col .div-transparent:before{
-  background-image: linear-gradient(to right, transparent, white, transparent);
-}
+/* Divider */
 hr.style13 {
 	height: 8px;
 	border: 0;
