@@ -189,6 +189,12 @@ font-family: 'Roboto';
   height: 350px;
   padding-top: 5em;
 }
+@media screen and (max-width: 1024px){
+.avatar-img {
+  padding-top: 2em;
+}
+}
+
 
 .avatar-resume-img {
   padding-bottom:0em;

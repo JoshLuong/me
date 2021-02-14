@@ -21,7 +21,7 @@ class Landing extends Component {
     if (window.innerWidth < 750) {
       return (
         <div id='home' className="image-container avatar-img">
-          <img src={avatar} />
+          <img src={avatar2} />
         </div>
       )
     }
@@ -89,7 +89,7 @@ class Landing extends Component {
                 <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
                   <i className="fab fa-css3" aria-hidden="true" /> CSS3
                 </p>
-                <div style={{ paddingTop: '1.5em', display: 'inline' }}>
+                <div style={{ paddingTop: '1.5em'}}>
                   <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
                     <i className="fab fa-js" aria-hidden="true" /> JavaScript
                 </p>
