@@ -15,7 +15,7 @@ class App extends Component {
     function renderTitle(){
       var selectorId = document.getElementById('landing-title');
       selectorId.innerHTML =
-        '<div className="banner-text"><h1><div class=""><span class="animation-entry"  style="display: inline; opacity: 1;color: #cfeefc;">Full Stack</span></div>Developer.</h1></div>';
+        '<div className="banner-text"><h1><div class=""><span class="animation-entry"  style="display: inline; opacity: 1;color: #e6d8ad;">Full Stack</span></div>Developer.</h1></div>';
       
     }
     return (
@@ -31,7 +31,7 @@ class App extends Component {
 
            </Link>
                 <div style={{ display: 'inline-block' }}>
-                  <Blink fontFamily='Roboto' textDecoration='none' color='black' fontSize='1.5em' text=' |'></Blink>
+                  <Blink fontFamily='Roboto' textDecoration='none' color='black' fontSize='1.6em' text=' |'></Blink>
                 </div>
               </div>
 

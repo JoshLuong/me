@@ -28,7 +28,7 @@ class Landing extends Component {
     }
     const properties = {
       duration: 3000,
-      transitionDuration: 1000,
+      transitionDuration: 1500,
       infinite: true,
       indicators: false,
       arrows: false,
@@ -86,8 +86,8 @@ class Landing extends Component {
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend </span>
                   <Typing.Backspace count={8} speed={30} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend </span>
-                  <Typing.Backspace count={9} speed={30}/>
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Full Stack </span>
+                  <Typing.Backspace count={9} speed={30} />
+                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#e6d8ad', display: 'inline', opacity: 1 }}>Full Stack </span>
 
                 </Typing>
                 Developer.
@@ -117,12 +117,12 @@ class Landing extends Component {
                 </div>
                 <div style={{ paddingTop: '1em', paddingBottom: '2em' }}>
                   <p>
-                    <i className="fab fa-java fa-5x" aria-hidden="true" /> Java
-                </p>
-                  <p>
                     <i className="fab fa-cuttlefish" aria-hidden="true" />++
                 </p>
                   <p>
+                    <i className="fab fa-java fa-5x" aria-hidden="true" /> Java
+                </p>
+                <p>
                     <i className="fas fa-database" aria-hidden="true" /> MySQL
                 </p>
                 </div>

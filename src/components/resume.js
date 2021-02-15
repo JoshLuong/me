@@ -43,7 +43,7 @@ class Resume extends Component {
                   </li>
                   <li>
                     <p> Surpassed <strong>25+ critical enhancements</strong> in a sensitive timeline for the product’s major version upgrade regarding
-                        <strong>asynchronous E2E logic</strong>, <strong>data source connectivity</strong>, and <strong>UI solutions</strong>
+                        <strong> asynchronous E2E logic</strong>, <strong>data source connectivity</strong>, and <strong>UI solutions</strong>
                     </p>
                   </li>
                   <li>
@@ -57,7 +57,7 @@ class Resume extends Component {
                     </p>
                   </li>
                   <li>
-                    <p>Expedited development for report - XML conversion with precise formatting calculations – a highly requested <strong>Excel XLSX</strong>
+                    <p>Expedited development for report - XML conversion with precise formatting calculations – a highly requested <strong>Excel XLSX </strong>
                     exporting feature – by completing <strong>20+ critical enhancements</strong>; displayed in the BETA release
                     </p>
                   </li>
@@ -74,8 +74,9 @@ class Resume extends Component {
             <div className="resume-right-col" style={{ marginBottom: '3em' }}>
               <hr class="style13"></hr>
               <h2 style={{ paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-file-code" aria-hidden="true" style={{ color: 'black' }} /> Projects</h2>
-              <Fade big>
-                <div>
+
+              <div>
+                <Fade big>
                   <Experience
                     startYear={"Jan 2021"}
                     endYear={"Present"}
@@ -99,15 +100,18 @@ class Resume extends Component {
                         </li>
                       </ul>}
                   />
-                  <div style={{ textAlign: 'center' }}>
-                    <p>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                    </p>
+                </Fade>
+                <div style={{ textAlign: 'center' }}>
+                  <p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </p>
 
-                  </div>
+                </div>
+
+                <Fade>
                   <Experience
                     startEndYear={"June 2020"}
                     jobName="Store-2-Door: Group Programming Project"
@@ -118,18 +122,20 @@ class Resume extends Component {
                         <li><p>Created efficient <strong>SQL</strong>  queries to populate the front-end with vital information for users, such as pages for the Receivers (shopping lists, available stores, receipts), and Transporters (incoming orders, service ratings)</p></li>
                       </ul>}
                   />
-                </div>
-              </Fade>
-              <Fade>
-                <div style={{ textAlign: 'center' }}>
-                  <p>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </p>
+                </Fade>
+              </div>
 
-                </div>
+
+              <div style={{ textAlign: 'center' }}>
+                <p>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </p>
+
+              </div>
+              <Fade>
                 <Experience
                   startEndYear={"Feb 2020"}
                   jobName="Meal-Print, a carbon footprint calculator for food: SAP Hackathon"
@@ -147,17 +153,17 @@ class Resume extends Component {
                     </ul>}
                 />
               </Fade>
-              <Fade>
-                <div>
-                  <div style={{ textAlign: 'center' }}>
-                    <p>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                    </p>
+              <div>
+                <div style={{ textAlign: 'center' }}>
+                  <p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </p>
 
-                  </div>
+                </div>
+                <Fade>
                   <Experience
                     startEndYear={"Feb 2020 | May 2019 "}
                     jobName="Multilevel Snake Game: React Programming Project"
@@ -166,15 +172,18 @@ class Resume extends Component {
                       <li><p>Updated the high scores for both levels after every game using <strong>localStorage</strong></p></li>
                       <li><p>Redesigned the game to use <strong>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p></li> </ul>}
                   />
-                  <div style={{ textAlign: 'center' }}>
-                    <p>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                    </p>
+                </Fade>
+                <div style={{ textAlign: 'center' }}>
+                  <p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </p>
 
-                  </div>
+                </div>
+
+                <Fade>
                   <Experience
                     startEndYear={"May 2019"}
                     jobName="Clinic Bookings: Java Programming Project"
@@ -183,8 +192,9 @@ class Resume extends Component {
                       <li><p>Constructed a database in <strong>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p></li>
                       <li><p>Implemented a GUI using JavaFX </p></li> </ul>}
                   />
-                </div>
-              </Fade>
+
+                </Fade>
+              </div>
               <Cell col={12} style={{ textAlign: 'center' }}>
                 <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>View Resume</a>
               </Cell>
