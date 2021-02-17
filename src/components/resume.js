@@ -76,7 +76,7 @@ class Resume extends Component {
               <h2 style={{ paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-file-code" aria-hidden="true" style={{ color: 'black' }} /> Projects</h2>
 
               <div>
-                <Fade big>
+                <Fade big duration={1400}>
                   <Experience
                     startYear={"Jan 2021"}
                     endYear={"Present"}
@@ -111,7 +111,7 @@ class Resume extends Component {
 
                 </div>
 
-                <Fade>
+                <Fade duration={1400}>
                   <Experience
                     startEndYear={"June 2020"}
                     jobName="Store-2-Door: Group Programming Project"
@@ -135,7 +135,7 @@ class Resume extends Component {
                 </p>
 
               </div>
-              <Fade>
+              <Fade duration={1400}>
                 <Experience
                   startEndYear={"Feb 2020"}
                   jobName="Meal-Print, a carbon footprint calculator for food: SAP Hackathon"
@@ -163,7 +163,7 @@ class Resume extends Component {
                   </p>
 
                 </div>
-                <Fade>
+                <Fade duration={1400}>
                   <Experience
                     startEndYear={"Feb 2020 | May 2019 "}
                     jobName="Multilevel Snake Game: React Programming Project"
@@ -183,7 +183,7 @@ class Resume extends Component {
 
                 </div>
 
-                <Fade>
+                <Fade duration={1400}>
                   <Experience
                     startEndYear={"May 2019"}
                     jobName="Clinic Bookings: Java Programming Project"

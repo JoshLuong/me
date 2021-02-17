@@ -5,12 +5,11 @@ import avatar1 from '../img/thumbnail_image1.png'
 import avatar2 from '../img/thumbnail_image2.png'
 import avatar3 from '../img/thumbnail_image3.png'
 import avatar4 from '../img/thumbnail_image4.png'
-import Bounce from 'react-reveal/Bounce'
 import { Slide } from 'react-slideshow-image';
-import Typing from 'react-typing-animation';
 import Contact from './contact';
 import AboutMe from './aboutme';
 import Resume from './resume';
+import TextLoop from "react-text-loop";
 
 // using MDL similar to bootsrap
 // inline style
@@ -19,8 +18,10 @@ import Resume from './resume';
 
 
 class Landing extends Component {
-
-  Slideshow() {
+  compo(){
+    console.log("YES");
+  }
+  avatar() {
     if (window.innerWidth < 750) {
       return (
         <div id='home' className="image-container avatar-img" style={{ height: '250px' }}>
@@ -28,46 +29,11 @@ class Landing extends Component {
         </div>
       )
     }
-    const properties = {
-      duration: 3000,
-      transitionDuration: 1500,
-      infinite: true,
-      indicators: false,
-      arrows: false,
-      pauseOnHover: false,
-      onChange: (oldIndex, newIndex) => {
-        console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-      }
-    }
     return (
       <div id='home' className="slide-container">
-        <Slide {...properties}>
-          <div className="each-slide">
-            <div className="image-container avatar-img">
-              <img src={avatar} />
-            </div>
-          </div>
-          <div className="each-slide">
-            <div className="image-container avatar-img">
-              <img src={avatar1} />
-            </div>
-          </div>
-          <div className="each-slide">
-            <div className="image-container avatar-img">
+        <div className="image-container avatar-img">
               <img src={avatar2} />
-            </div>
-          </div>
-          <div className="each-slide">
-            <div className="image-container avatar-img">
-              <img src={avatar3} />
-            </div>
-          </div>
-          <div className="each-slide">
-            <div className="image-container avatar-img">
-              <img src={avatar4} />
-            </div>
-          </div>
-        </Slide>
+        </div>
       </div>
     )
   }
@@ -77,21 +43,18 @@ class Landing extends Component {
         <Grid id="no-margin" className="mdl-grid--no-spacing">
           <Cell className="mdl-grid--no-spacing background-image" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
             <div>
-              {this.Slideshow()}
+              {this.avatar()}
             </div>
 
 
             <div className="banner-text">
-              <h1 id="landing-title">
-                <Typing speed={45}>
-                  <Typing.Delay ms={550} />
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend </span>
-                  <Typing.Backspace count={8} speed={30} />
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend </span>
-                  <Typing.Backspace count={9} speed={30} />
-                  <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#e6d8ad', display: 'inline', opacity: 1 }}>Full Stack </span>
+              <h1>
+                <TextLoop mask={true}adjustingSpeed={150} interval={1000}springConfig={{ stiffness: 140, damping: 12 }}>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend</span>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend</span>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#e6d8ad', display: 'inline', opacity: 1 }}>Software</span>
 
-                </Typing>
+                </TextLoop>{" "}
                 Developer.
               </h1>
               <h5 style={{ fontSize: '2em' }}></h5>
