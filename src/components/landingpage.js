@@ -15,6 +15,8 @@ import Resume from './resume';
 // using MDL similar to bootsrap
 // inline style
 //5ki
+// https://kaboompics.com/photo/8482/tropical-botanical-garden-in-belem-lisbon-portugal
+
 
 class Landing extends Component {
 
@@ -81,7 +83,7 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1 id="landing-title">
-                <Typing speed={40}>
+                <Typing speed={45}>
                   <Typing.Delay ms={550} />
                   <span className="animation-entry" aria-hidden="true" style={{ transition: 'opacity 10s ease-in-out', color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend </span>
                   <Typing.Backspace count={8} speed={30} />

@@ -15,7 +15,7 @@ class Resume extends Component {
 
           <Cell id="no-margin" col={4} tablet={12} phone={12} style={{ width: '100%' }}>
             <div className="resume-right-col dark-background">
-              <h2 style={{ marginTop: '0', paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
+              <h2 style={{ marginTop: '0', paddingTop: '1.6em', textAlign: 'center' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
 
 
               <Education

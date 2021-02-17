@@ -64,8 +64,6 @@ strong{
 .aboutme .critic-reviews p {
   font-size: 1.3em;
   padding-top: 0em;
-  padding-left: 1em;
-  padding-right: 1em;
   color:white;
 }
 .aboutme .critic-reviews h2 {
@@ -165,6 +163,7 @@ strong{
   display: inline;
   white-space: nowrap;
 }
+
 .avatar-img {
   height: 350px;
   padding-top: 5em;
@@ -223,9 +222,17 @@ color: #323232 !important;
   width: 100%;
   background-color: #f9fafb;
 }
-.aboutme p{
-  padding-left: 2em;
-  padding-right: 2em;
+@media screen and (max-width: 1024px){
+  .aboutme p{
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media screen and (min-width: 1024px){
+  .aboutme p{
+    padding-left: 5em;
+    padding-right: 5em;
+  }
 }
 .aboutme p {
   color: black;
