@@ -58,7 +58,7 @@ class Resume extends Component {
                   </li>
                   <li>
                     <p>Expedited development for report - XML conversion with precise formatting calculations – a highly requested <strong>Excel XLSX </strong>
-                    exporting feature – by completing <strong>20+ critical enhancements</strong>; displayed in the BETA release
+                    exporting feature – by completing <strong>20+ critical enhancements</strong>
                     </p>
                   </li>
                   <li>
