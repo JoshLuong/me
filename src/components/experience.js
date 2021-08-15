@@ -11,7 +11,7 @@ class Experience extends Component {
           </Cell>
           <Cell col={8} tablet={12} cell={12}>
             <h4 style={{ marginTop: '0px' }}>{this.props.jobName}</h4>
-            <p style={{ color: '#d2dbe5' }}>{this.props.startEndYear}</p>
+            <p style={{ color: '#40496b' }}>{this.props.startEndYear}</p>
             <p>{this.props.jobDescription}</p>
           </Cell>
           <Cell col={2} tablet={0} cell={0}>
@@ -26,7 +26,7 @@ class Experience extends Component {
         </Cell>
         <Cell col={8} tablet={12} cell={12}>
           <h4 style={{ marginTop: '0px' }}>{this.props.jobName}</h4>
-          <p style={{ color: '#d2dbe5' }}>{this.props.startYear} - {this.props.endYear}</p>
+          <p style={{ color: '#40496b' }}>{this.props.startYear} - {this.props.endYear}</p>
           <p>{this.props.jobDescription}</p>
         </Cell>
         <Cell col={2} tablet={0} cell={0}>

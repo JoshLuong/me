@@ -9,12 +9,12 @@ class About extends Component {
         <Grid className=" mdl-grid--no-spacing">
           <Cell col={12}>
 
-            <div id="about-me-text">
+            <div id="about-me-text" className="about-me-container">
               <h2>
                 <i className="fas fa-address-card" aria-hidden="true" /> About Me
               </h2>
               <div style={{ textAlign: 'center' }}>
-                <p>Hi! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
+                <p>Hi, I'm Josh! I'm a third year student studying at The University of British Columbia based in Vancouver, BC. I love the outdoors-
                 I am always looking for excuses to go on hikes, go camping, or to just bathe in the sun. My new found hobby (thanks to COVID-19)
               is baking/ cooking. I love exploring new recipes and cuisines. Talk to me about the great outdoors!</p>
                 <p>I have previously worked in agile development team settings, where I focused on feature development in both backend
@@ -31,7 +31,9 @@ class About extends Component {
               all while proudly producing quality code and customer satisfaction.</p>
               </div>
             </div>
-            <Cell col={12} className='dark-background' style={{ margin: 0, width: '100%' }}>
+            
+          </Cell>
+          <Cell col={12} className='dark-background' className="critic-reviews-container">
 
               <div className='critic-reviews'>
                 <h2><i className="fas fa-film" aria-hidden="true" /> Critic Reviews</h2>
@@ -79,7 +81,6 @@ class About extends Component {
               <br></br>
 
             </Cell>
-          </Cell>
         </Grid>
       </div>
     )

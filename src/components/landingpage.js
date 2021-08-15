@@ -21,18 +21,25 @@ class Landing extends Component {
   compo(){
     console.log("YES");
   }
+  componentDidMount() {
+    const section1 = document.querySelector('.mdl-layout__header')
+    
+    document.querySelector('.landing-grid').addEventListener('scroll', () => {
+      section1.style.backgroundColor = document.querySelector('.welcome-page').getBoundingClientRect().top <= -15 ? `#ffffff` : 'transparent';
+    })
+  }
   avatar() {
     if (window.innerWidth < 750) {
       return (
         <div id='home' className="image-container avatar-img" style={{ height: '250px' }}>
-          <img src={avatar4} height="300" width="300" />
+          <img src={avatar4} height="250" width="250" />
         </div>
       )
     }
     return (
       <div id='home' className="slide-container">
         <div className="image-container avatar-img">
-              <img src={avatar2} />
+              <img src={avatar2} height="300" width="300"/>
         </div>
       </div>
     )
@@ -40,7 +47,7 @@ class Landing extends Component {
   render() {
     return (
       <div style={{ width: '100%', margin: 'auto' }} className="landing-grid">
-        <Grid id="no-margin" className="mdl-grid--no-spacing">
+        <Grid id="no-margin" className="mdl-grid--no-spacing welcome-page">
           <Cell className="mdl-grid--no-spacing background-image" id="no-margin" col={12} style={{ margin: 'auto', position: 'relative' }}>
             <div>
               {this.avatar()}
@@ -50,38 +57,32 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>
                 <TextLoop mask={true}adjustingSpeed={150} interval={1000}springConfig={{ stiffness: 140, damping: 12 }}>
-                  <span className="animation-entry" aria-hidden="true" style={{color: '#cfeefc', display: 'inline', opacity: 1 }}>Backend</span>
-                  <span className="animation-entry" aria-hidden="true" style={{color: '#a5dad7', display: 'inline', opacity: 1 }}>Frontend</span>
-                  <span className="animation-entry" aria-hidden="true" style={{color: '#e6d8ad', display: 'inline', opacity: 1 }}>Software</span>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#ef476f', display: 'inline', opacity: 1 }}>Backend</span>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#70c1b3', display: 'inline', opacity: 1 }}>Frontend</span>
+                  <span className="animation-entry" aria-hidden="true" style={{color: '#f9c74f', display: 'inline', opacity: 1 }}>Software</span>
 
                 </TextLoop>{" "}
                 Developer.
               </h1>
               <h5 style={{ fontSize: '2em' }}></h5>
               <div className='landing-page-skills'>
-                <div style={{ paddingTop: '1.5em', paddingBottom: '1.5em' }}>
-                  <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+              <p>
                     <i className="fab fa-js" aria-hidden="true" /> JavaScript
                 </p>
-                </div>
-                <div style={{ paddingTop: '1.5em', display: 'inline' }}>
-                  <p>
+                <p>
                     <i className="fab fa-html5" aria-hidden="true" /> HTML5
                 </p>
-                  <p>
+
+                <p>
                     <i className="fab fa-css3" aria-hidden="true" /> CSS3
                 </p>
-                </div>
-                <div style={{ marginTop: '1.5em' }}>
-                  <p>
+                <p>
                     <i className="fab fa-react" aria-hidden="true" /> ReactJS
                 </p>
-                  <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
+                <p style={{ display: 'inline', whiteSpace: 'nowrap' }}>
                     <i className="fab fa-node-js" aria-hidden="true" /> NodeJS
                 </p>
-                </div>
-                <div style={{ paddingTop: '1em', paddingBottom: '2em' }}>
-                  <p>
+                <p>
                     <i className="fab fa-cuttlefish" aria-hidden="true" />++
                 </p>
                   <p>
@@ -90,7 +91,6 @@ class Landing extends Component {
                 <p>
                     <i className="fas fa-database" aria-hidden="true" /> MySQL
                 </p>
-                </div>
               </div>
             </div>
             <br />

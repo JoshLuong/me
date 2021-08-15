@@ -15,7 +15,7 @@ class Resume extends Component {
 
           <Cell id="no-margin" col={4} tablet={12} phone={12} style={{ width: '100%' }}>
             <div className="resume-right-col dark-background">
-              <h2 style={{ marginTop: '0', paddingTop: '1.6em', textAlign: 'center' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
+              <h2 style={{ marginTop: '0', paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-pencil-alt" aria-hidden="true" style={{ color: 'black' }} /> Education</h2>
 
 
               <Education
@@ -28,9 +28,29 @@ class Resume extends Component {
           </Cell>
           <Cell id="no-margin" col={8} tablet={12} phone={12} style={{ width: '100%' }}>
             <div className="resume-right-col dark-background">
-              <hr class="style13"></hr>
               <h2 style={{ textAlign: 'center' }}><i className="fas fa-briefcase" aria-hidden="true" style={{ color: 'black', marginTop: '0', paddingTop: '1em' }} /> Experience</h2>
-
+              <Experience
+                startYear={"May 2021"}
+                endYear={"August 2021"}
+                jobName="Galvanize: Frontend Developer"
+                jobDescription={<ul>
+                  <li>
+                    <p>Expedited maintenance of our open source React Library (Paprika) of 70 components using <strong>ES6, TypeScript, Redux, Node, and Jest/ Cypress testing</strong> for the world’s largest GRC SaaS company
+                    </p>
+                  </li>
+                  <li>
+                    <p>Coordinated accessibility (WCAG 3.0) enhancements of <strong>Ruby on Rails and React</strong> applications using aria attributes, announcements, and voiceover
+                    </p>
+                  </li>
+                  <li>
+                    <p>Revitalized features using <strong>Redux Toolkit</strong> RTK (Redux slices and actions), custom hooks, Context providers, and other state management tools
+                    </p>
+                  </li>
+                  <li>
+                    <p>Monitored and ensured code quality standards through various CI/CD tools (Docker builds, Screener tests, AWS codebuild)
+                    </p>
+                  </li>
+                </ul>} />
               <Experience
                 startYear={"Sept 2019"}
                 endYear={"May 2020"}
@@ -71,11 +91,32 @@ class Resume extends Component {
             </div>
           </Cell>
           <Cell id="no-margin" col={12} style={{ width: '100%' }}>
-            <div className="resume-right-col" style={{ marginBottom: '3em' }}>
-              <hr class="style13"></hr>
+            <div className="resume-right-col">
               <h2 style={{ paddingTop: '1em', textAlign: 'center' }}><i className="fas fa-file-code" aria-hidden="true" style={{ color: 'black' }} /> Projects</h2>
 
               <div>
+                <Fade duration={1400}>
+                  <Experience
+                    startEndYear={"August 2021"}
+                    jobName={<a target="_blank" href="https://trippoapp.herokuapp.com/">Trippo: Travel Itinerary Application</a>}
+                    jobDescription={
+                    <ul>
+                      <li><p>Actualized self-designed, UX-focused Figma prototype using <strong>React, Redux (RTK), Node.js, and Mongo/ Mongoose</strong></p></li>
+                      <li><p>Conceptualized <strong>MapBox</strong> integration and customizable <strong>Yelp API</strong> suggestions to support user experience, while developing <strong>80%</strong> of the customer-facing UI</p></li>
+                      <li><p>Established secure <strong>Google user sign in/ user redirects</strong> and APIs using google-auth-library and express-sessions</p></li>
+                      <li><p>Single-handedly spearheaded development on <strong>export-to-pdf</strong> and secure <strong>link sharing</strong> feature </p></li> </ul>}
+                  />
+
+                </Fade>
+                              <div style={{ textAlign: 'center' }}>
+                  <p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </p>
+
+                </div>
                 <Fade big duration={1400}>
                   <Experience
                     startYear={"Jan 2021"}
@@ -173,32 +214,10 @@ class Resume extends Component {
                       <li><p>Redesigned the game to use <strong>React.js framework </strong>through functional components and hooks for the game logic, and state management on localStorage for updating the high score</p></li> </ul>}
                   />
                 </Fade>
-                <div style={{ textAlign: 'center' }}>
-                  <p>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </p>
-
-                </div>
-
-                <Fade duration={1400}>
-                  <Experience
-                    startEndYear={"May 2019"}
-                    jobName="Clinic Bookings: Java Programming Project"
-                    jobDescription={<ul><li><p>Designed a <strong>bookings application </strong>that uses a HashMap to organize a doctor’s patients and their respective appointments</p></li>
-                      <li><p>Implemented a fixed scheduling rate that uses the <strong>Gmail SMTP </strong>to email patients when their appointments are within a week of the current date- personalized emails with the patient’s name and doctor are sent out </p></li>
-                      <li><p>Constructed a database in <strong>MySQL using JDBC </strong>to store patients, along with their respective information and appointment dates</p></li>
-                      <li><p>Implemented a GUI using JavaFX </p></li> </ul>}
-                  />
-
-                </Fade>
               </div>
               <Cell col={12} style={{ textAlign: 'center' }}>
-                <a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: 'white', marginBottom: '1.5em', size: '2em' }}>View Resume</a>
+                <p><a href='https://www.dropbox.com/s/pc6et00l03jh7lt/Joshua_Luong_Resume.pdf?dl=0' target="_blank" style={{ color: '#f9c74f', size: '2em' }}>View Resume</a></p>
               </Cell>
-              <p style={{ padding: '1em' }}></p>
             </div>
           </Cell>
         </Grid>

@@ -1,6 +1,6 @@
 /* Scroll Bar */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 /* Track */
@@ -27,7 +27,7 @@
 .landing-grid {
   text-align: center;
   position: fixed;
-  font-family: 'Roboto';
+  font-family: 'DM Mono', monospace;
   top: 0;
   left: 0;
   width: 100%;
@@ -42,7 +42,11 @@
 }
 
 .background-image{
-  background-image: url('./img/blue_bgnd_phone.jpg');
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to right, #b3d4fc , #ffffff);
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
@@ -50,33 +54,44 @@
 @media screen and (min-width: 750px){
 
   .background-image{
-    background-image: url('./img/blue_bgnd.jpg');
+    background-image: linear-gradient(to right, #b3d4fc , #ffffff);
     min-height: 90vh;
   }
 }
 .dark-background{
-  background: #40496b;
+  background: #ffffff;
 }
 strong{
-  color: #e6d8ad;
+  color: #f9c74f;
 }
 /* Critic Reviews */
+.critic-reviews {
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.3);
+  margin: 1em 2em;
+  padding-bottom: 1em;
+  border-radius: 4px;
+}
 .aboutme .critic-reviews p {
   font-size: 1.3em;
   padding-top: 0em;
-  color:white;
+  color:black;
 }
 .aboutme .critic-reviews h2 {
-  font-size: 55px;
-  padding-top: 0.7em;
-  font-weight: bold;
-  color:white;
+  color:black;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: 0;
+  padding-top: 0.5em;
 }
 .critic-reviewer {
   font-family: 'PT Serif';
 }
 
 /* Resume */
+#resume {
+  margin-top: 1.5em;
+}
 .dot {
   height: 15px;
   width: 15px;
@@ -117,10 +132,27 @@ strong{
 
 /* Resume Page css */
 .resume-right-col {
-    color: white;
+    color: black;
     text-align: left;
-    padding-left: 2em;
-    padding-right: 2em;
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    margin:0 2em;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 840px){
+  .resume-right-col h4, .resume-right-col p {
+    text-align: center;
+  }
+
+  .resume-right-col li p {
+    text-align: left;
+    padding-right: 0.5em;
+  }
+}
+
+.resume-right-col a {
+  color: black;
 }
 .resume-right-col p {
     font-size: 1.1em;
@@ -143,6 +175,9 @@ strong{
 
 /* Contact page */
 
+#contact > footer {
+  background-image: linear-gradient(to right, #b3d4fc , #ffffff);
+}
 .contact-body {
   width: 100%;
   justify-content: center;
@@ -159,15 +194,14 @@ strong{
 
 /* home page */
 
-.landing-page-skills p{
-  display: inline;
-  white-space: nowrap;
+.landing-page-skills{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-.avatar-img {
-  height: 350px;
-  padding-top: 5em;
-}
 @media screen and (max-width: 1024px){
 .avatar-img {
   padding-top: 2em;
@@ -175,18 +209,18 @@ strong{
 }
 .banner-text {
     color: white;
-    margin: auto;
-    margin-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
 }
 .banner-text h1 {
   font-weight: bold;
-  color: white;
+  color: black;
+  margin-bottom: 1em;
 }
 
 .banner-text h2 {
   font-size: 55px;
+  margin-top: 1em;
   padding-top: 0.3em;
   font-weight: bold;
   color: #323232;
@@ -199,18 +233,17 @@ strong{
 }
 
 .banner-text p {
-    color: white;
+  color: #40496b;
     font-size: 1.6em;
     padding-top: 0em;
     padding-left: 0.85em;
     padding-right: 0.85em;
 }
 .header-color {
-  background: #E8ECF8; /* fallback for old browsers */
-  opacity: 0.95;
-  font-family: 'Roboto';
-  background: -webkit-linear-gradient(to right, #E8ECF8 #E8ECF8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E8ECF8, #E8ECF8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'DM Mono', monospace;
+}
+.mdl-layout__header.mdl-layout__header {
+  background-color: transparent;
 }
 .mdl-logo{
 color: #323232 !important;
@@ -220,7 +253,6 @@ color: #323232 !important;
   color: black;
   margin: auto;
   width: 100%;
-  background-color: #f9fafb;
 }
 @media screen and (max-width: 1024px){
   .aboutme p{
@@ -230,8 +262,8 @@ color: #323232 !important;
 }
 @media screen and (min-width: 1024px){
   .aboutme p{
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 .aboutme p {
@@ -240,11 +272,21 @@ color: #323232 !important;
   padding-top: 0em;
 }
 .aboutme h2 {
-  font-size: 55px;
-  padding-top: 0.3em;
-  font-weight: bold;
   color: #323232;
+  font-size: 45px;
+  margin-top: 0;
+  padding-top: 0.5em;
+  padding-top: 0.5em;
+  font-weight: 400;
+  line-height: 48px;
 }
+
+.about-me-container {
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin: 1em 2em 0 2em;
+}
+
 
 .mdl-textfield {
     margin: -20px 0;
@@ -285,7 +327,7 @@ color: #323232 !important;
     content:'\2605';
 }
 .star.on {
-    color: #e6d8ad;
+    color: #f9c74f;
 }
 .star.half:after {
     content:'\2605';
@@ -316,12 +358,7 @@ color: #323232 !important;
 }
 
 /* Divider */
-hr.style13 {
-	height: 8px;
-	border: 0;
-  width: 100%;
-	box-shadow: 0 8px 8px -8px #8c8b8b inset;
-}
+
 .mdl-mega-footer--link-list .mdl-mega-footer__link-list{
 margin-bottom: 0px !important;
 }

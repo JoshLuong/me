@@ -6,7 +6,23 @@ import Blink from 'react-blink-text';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class App extends Component {
+  componentDidMount() {
+    console.log("HERE")
+    const [red, green, blue] = [69, 111, 225]
+    const section1 = document.querySelector('.header-color')
+    
+    window.addEventListener('scroll', () => {
+      console.log('scroll')
+      let y = 1 + (window.scrollY || window.pageYOffset) / 150
+      y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+      const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+      console.log(section1)
+      section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    })
+  }
+  
   render() {
+
     function style() {
       var selectorId = document.querySelector('.mdl-layout');
       selectorId.MaterialLayout.toggleDrawer();
@@ -16,6 +32,7 @@ class App extends Component {
         <Layout>
           <Header
             className="header-color"
+            id="header-color"
             title={
               <div>
                 <Link style={{textDecoration: 'none', color: '#323232', fontSize: '1.5em', float: 'left' }} to="/#home">
@@ -23,9 +40,6 @@ class App extends Component {
                   josh luong
 
            </Link>
-                <div style={{ display: 'inline-block' }}>
-                  <Blink fontFamily='Roboto' textDecoration='none' color='black' fontSize='1.6em' text=' |'></Blink>
-                </div>
               </div>
 
             }
